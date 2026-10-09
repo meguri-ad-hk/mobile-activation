@@ -523,25 +523,13 @@
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
-  var navigated = false;
-  var callback = function () {
-    if (!navigated && typeof url === 'string') {
-      navigated = true;
-      window.location.assign(url);
-    }
-  };
-  var fallback = window.setTimeout(callback, 1600);
-  try {
+  if (typeof gtag === 'function') {
     gtag('event', 'conversion', {
-      'send_to': 'AW-18497496047/YIrvCLbtsJMdEO_HpfRE',
-      'event_callback': function () { window.clearTimeout(fallback); callback(); },
-      'event_timeout': 1500
+      'send_to': 'AW-18497496047/YIrvCLbtsJMdEO_HpfRE'
     });
-  } catch (trackingError) {
-    window.clearTimeout(fallback);
-    callback();
   }
-  return false;
+
+  return true;
 }
 </script>
 
