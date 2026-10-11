@@ -22,8 +22,6 @@
 <meta content="MEGURI" property="og:site_name"/>
 <meta content="香港流動廣告車及品牌活動推廣｜MEGURI" property="og:title"/>
 <meta content="MEGURI 提供流動廣告車及品牌活動推廣方案，展示七款形式：流動廣告車、展示廣告車、小型廣告車、Volkswagen T2、雪糕車、電車巡遊及水晶巴士。透過網上表格或 WhatsApp 查詢你的活動需要。" property="og:description"/>
-<link href="https://megurihk.com/" rel="canonical"/>
-<meta content="https://megurihk.com/" property="og:url"/>
 <meta content="https://megurihk.com/images/hero-1.jpg" property="og:image"/>
 <meta content="MEGURI 流動廣告車及品牌活動推廣" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
@@ -326,14 +324,97 @@
 @media(max-width:900px){.pillar-grid{gap:14px}.pillar-image{height:210px}.pillar-info{padding:40px 18px 23px;min-height:210px}.pillar-icon{left:17px}}
 @media(max-width:640px){.meguri-panorama{scroll-margin-top:65px}.panorama-stage{height:min(780px,calc(100svh - 65px));min-height:570px;max-height:800px}.panorama-frames .panorama-frame img{object-position:center 33%}.panorama-shade{background:linear-gradient(180deg,rgba(8,7,12,.02) 8%,rgba(8,7,12,.06) 28%,rgba(8,7,12,.7) 56%,rgba(8,7,12,.94) 100%)}.panorama-inner{height:100%;min-height:0;align-items:flex-end;padding-top:190px;padding-bottom:88px}.panorama-copy{width:100%}.panorama-heading{font-size:clamp(2.7rem,10vw,3.6rem);line-height:.98;margin-bottom:25px}.panorama-zh{font-size:1.5rem;margin-bottom:9px}.panorama-description{font-size:.94rem;line-height:1.55;margin-bottom:18px}.panorama-cta{padding:12px 20px;font-size:.91rem}.panorama-dots{bottom:16px}.pillar-grid{grid-template-columns:1fr;gap:18px}.pillar-image{height:auto;aspect-ratio:16/9}.pillar-info{padding:40px 21px 21px;min-height:0}.pillar-icon{top:-28px;left:19px;width:53px;height:53px}.pillar-info h3{font-size:1.35rem}.pillar-zh{font-size:1rem;margin-bottom:10px}.pillar-desc{font-size:.94rem;line-height:1.65}}
 @media(prefers-reduced-motion:reduce){.panorama-frame{transition:none}}
+
+
+/* Phase 2 GI: inherits the approved MEGURI section heading and spacing system */
+.p2-gi{padding-top:64px;padding-bottom:64px}
+.p2-gi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.p2-gi-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff}
+.p2-gi-photo{margin:0;height:248px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f4f4f5}
+.p2-gi-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.p2-gi-head{padding:19px 20px 12px;display:flex;flex-direction:column;gap:7px;background:#f7f7f8}
+.p2-gi-number{font-size:.68rem;font-weight:900;letter-spacing:.10em;color:var(--pink)}
+.p2-gi-head h3{font-size:1.22rem;line-height:1.2;margin:0;color:#111;font-weight:900;letter-spacing:-.01em}
+.p2-gi-type{font-size:.73rem;font-weight:800;color:#57515a;line-height:1.45}
+.p2-gi-body{padding:15px 20px 19px;flex:1}
+.p2-gi-body p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.65}
+.p2-gi-actions{margin-top:24px}
+.p2-text-link{display:inline-block;color:#de007c;font-size:.93rem;font-weight:850;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px}
+@media(max-width:900px){.p2-gi-grid{gap:13px}.p2-gi-photo{height:205px}.p2-gi-head{padding:15px}.p2-gi-body{padding:14px 15px 17px}.p2-gi-head h3{font-size:1.05rem}}
+@media(max-width:640px){.p2-gi{padding-top:48px;padding-bottom:48px}.p2-gi-grid{grid-template-columns:1fr;gap:17px}.p2-gi-photo{height:auto;aspect-ratio:16/10}.p2-gi-head{padding:17px 19px 12px}.p2-gi-head h3{font-size:1.2rem}.p2-gi-body{padding:13px 19px 18px}.p2-gi-actions{margin-top:20px}}
+
+/* Phase 2 background rhythm preview: deliberately only one product zone changes. */
+.p2-pink-band{background:linear-gradient(145deg,#ffffff 0%,#fff6fb 100%);border-block:1px solid #f9e6f0}
+.p2-pink-band .format-card{background:#fff}
+/* These are illustrative third-party vehicle photos, NOT photographs of the named campaigns. */
+.p2-gi-photo{position:relative}
+.p2-gi-photo::after{content:"版面測試照片 · 非該品牌活動";position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);color:#3d333a;border-radius:5px;padding:5px 8px;font:700 11px/1.25 Arial,"Noto Sans TC",sans-serif;pointer-events:none}
+.p2-gi-head{background:#faf9fa}
+@media(max-width:640px){.p2-gi-photo::after{font-size:10px;left:8px;bottom:8px}}
+
+
+/* PHASE 2: merged WHAT WE DO + BEST FOR. Header spacing inherited verbatim from approved Phase 1. */
+#about .section-head{margin-bottom:28px}
+#about .section-head h2{margin:0;line-height:1.02}
+#about .section-head p{margin:6px 0 0;line-height:1.6}
+.pillar-info{display:flex;flex-direction:column}
+.pillar-best{border-top:1px solid #ebe5e9;margin:16px 0 0;padding-top:12px;font-size:.86rem;line-height:1.6;color:#464048}
+.pillar-best strong{color:var(--pink);font-weight:850}
+@media(min-width:641px){.pillar-info{min-height:260px}.pillar-best{margin-top:auto}}
+/* Mobile: retain generous image presence and card separation. No decorative underline under heading. */
+@media(max-width:640px){
+ #about .section-head{margin-bottom:28px}
+ .pillar-grid{gap:24px}
+ .pillar-card{padding:12px;border-radius:19px}
+ .pillar-image{aspect-ratio:4/3;height:auto;border-radius:11px;overflow:hidden}
+ .pillar-image img{object-fit:cover;object-position:center 50%}
+ .pillar-info{padding:35px 10px 12px}
+ .pillar-info h3{margin-bottom:5px}
+ .pillar-best{margin-top:14px;padding-top:12px}
+ .pillar-icon{left:10px;top:-27px}
+}
+
+/* Phase 2 GI caption refinement — no badge/box, unobtrusive grey overlay */
+.p2-gi-photo::after {
+  content: "AI 概念示意 · 非原活動照片";
+  position: absolute;
+  left: auto;
+  right: 12px;
+  bottom: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: rgba(55,55,55,.65);
+  font: 500 10px/1.35 Arial,"Noto Sans TC",sans-serif;
+  letter-spacing: .015em;
+  text-shadow: 0 1px 3px rgba(255,255,255,.8);
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+ .p2-gi-photo::after {right:9px;bottom:8px;font-size:9px;}
+}
 </style>
-</head>
+<meta content="noindex,nofollow" name="robots"/><style>
+/* Phase 2: new GI concept assets, no third-party campaign photos. */
+.p2-gi-photo::after{content:"AI 概念示意 · 非原活動照片";position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);color:#333;border-radius:5px;padding:5px 8px;font:700 11px/1.25 Arial,"Noto Sans TC",sans-serif;pointer-events:none}
+.p2-gi-photo{height:auto;aspect-ratio:4/3;background:#f6f6f6;position:relative}
+.p2-gi-photo picture{display:block;width:100%;height:100%}
+.p2-gi-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-width:640px){.p2-gi-photo{aspect-ratio:4/3;height:auto}.p2-gi-photo::after{left:9px;bottom:9px;font-size:10px}}
+</style><style>
+/* Phase 2 GI: one understated disclosure below the single CTA; never overlay images. */
+.p2-gi-photo::after { content: none !important; display: none !important; }
+.p2-gi-disclaimer { margin: 10px 0 0; padding:0; color:#898989; font:400 12px/1.55 Arial,"Noto Sans TC",sans-serif; letter-spacing:0; }
+@media (max-width:640px){.p2-gi-disclaimer{font-size:11px;margin-top:9px;}}
+</style></head>
 <body>
 <header class="topbar">
 <nav aria-label="主選單" class="nav shell">
 <a aria-label="MEGURI 首頁" class="logo" href="#top"><img alt="MEGURI" height="1600" src="images/meguri-logo.jpeg" width="1600"/></a>
 <div class="nav-links">
-<a href="#about">服務特色</a><a href="#formats">廣告車款</a><a href="#uses">適用場景</a><a href="#enquiry">聯絡我們</a>
+<a href="#about">服務特色</a><a href="#formats">廣告車款</a><a href="#about">適用場景</a><a href="#enquiry">聯絡我們</a>
 </div>
 <a class="pill nav-cta" href="#enquiry">馬上查詢 →</a>
 </nav>
@@ -348,12 +429,30 @@
 <section class="section shell" id="about">
 <div class="section-head"><h2>WHAT <span>WE DO</span></h2><p>由流動廣告車到現場推廣　<br class="mobile-break"/>將品牌帶到街頭　與受眾直接接觸</p></div>
 <div class="pillar-grid">
-<article class="pillar-card"><div class="pillar-image"><img alt="MEGURI 流動廣告車於街頭展示品牌訊息" decoding="async" height="1536" loading="lazy" src="images/meguri-what-we-do-visibility.png" width="1024"/></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-visibility"></span><h3>VISIBILITY</h3><p class="pillar-zh">品牌曝光</p><p class="pillar-desc">透過流動廣告媒體，將品牌訊息帶到不同地點，擴大曝光。</p></div></article>
-<article class="pillar-card"><div class="pillar-image"><img alt="MEGURI 推廣員與街頭受眾互動" decoding="async" height="1536" loading="lazy" src="images/meguri-what-we-do-activation.png" width="1024"/></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-activation"></span><h3>ACTIVATION</h3><p class="pillar-zh">現場推廣</p><p class="pillar-desc">透過派發、試用及互動活動，讓品牌與受眾直接接觸。</p></div></article>
-<article class="pillar-card"><div class="pillar-image"><img alt="MEGURI 流動展示車提供品牌體驗" decoding="async" height="1536" loading="lazy" src="images/meguri-what-we-do-experience.png" width="1024"/></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-experience"></span><h3>EXPERIENCE</h3><p class="pillar-zh">品牌體驗</p><p class="pillar-desc">以流動展示及體驗空間，讓受眾更深入認識品牌。</p></div></article>
+<article class="pillar-card"><div class="pillar-image"><picture><source media="(max-width: 640px)" srcset="images/HOME_WHAT_WE_DO_VISIBILITY_LED_TRUCK_MOBILE.png"/><img alt="MEGURI LED 廣告車於香港街頭展示品牌訊息，用於品牌曝光及偶像應援" decoding="async" loading="lazy" src="images/HOME_WHAT_WE_DO_VISIBILITY_LED_TRUCK_DESKTOP.png"/></picture></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-visibility"></span><h3>VISIBILITY</h3><p class="pillar-zh">品牌曝光</p><p class="pillar-desc">透過流動廣告媒體，將品牌訊息帶到不同地點，擴大曝光。</p><p class="pillar-best"><strong>Best for：</strong>新品宣傳 · 地區推廣 · 偶像應援</p></div></article>
+<article class="pillar-card"><div class="pillar-image"><img alt="MEGURI 推廣員與街頭受眾互動" decoding="async" height="1536" loading="lazy" src="images/meguri-what-we-do-activation.png" width="1024"/></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-activation"></span><h3>ACTIVATION</h3><p class="pillar-zh">現場推廣</p><p class="pillar-desc">透過派發、試用及互動活動，讓品牌與受眾直接接觸。</p><p class="pillar-best"><strong>Best for：</strong>產品試用 · 街頭互動 · 派發推廣</p></div></article>
+<article class="pillar-card"><div class="pillar-image"><img alt="MEGURI 流動展示車提供品牌體驗" decoding="async" height="1536" loading="lazy" src="images/meguri-what-we-do-experience.png" width="1024"/></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-experience"></span><h3>EXPERIENCE</h3><p class="pillar-zh">品牌體驗</p><p class="pillar-desc">以流動展示及體驗空間，讓受眾更深入認識品牌。</p><p class="pillar-best"><strong>Best for：</strong>產品展示 · 流動展廳 · 品牌體驗</p></div></article>
 </div>
 </section>
-<section aria-labelledby="process-heading" class="section activation-process shell" id="process">
+<div class="p2-pink-band"><section class="section formats shell" id="formats">
+<div class="section-head"><h2>CHOOSE YOUR <span>FORMAT</span></h2><p>不同形式配合不同 Campaign 目標　<br class="mobile-break"/>讓品牌走進更多場景</p></div>
+<div class="format-toolbar">
+<span aria-live="polite" class="format-counter" id="format-counter">01 / 07</span>
+<div class="format-arrows">
+<button aria-controls="format-slider" aria-label="上一款車型" class="format-arrow" data-step="-1" type="button"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
+<button aria-controls="format-slider" aria-label="下一款車型" class="format-arrow" data-step="1" type="button"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
+</div>
+</div>
+<div aria-label="七款車型，左右滑動瀏覽" class="format-grid" id="format-slider" role="region" tabindex="0">
+<article class="format-card"><a aria-label="了解 Moving Showroom 流動廣告車詳情" class="format-image-link" href="/moving-showroom/"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/moving-showroom-480.webp 480w, /images/moving-showroom-800.webp 800w, /images/moving-showroom-1122.webp 1122w" type="image/webp"/><img alt="Moving Showroom 流動廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/moving-showroom.jpg" width="1122"/></picture></a><div class="format-copy"><h3><a class="format-title-link" href="/moving-showroom/">Moving Showroom｜流動廣告車</a></h3><p>以可進入的車廂展示產品，打造近距離品牌體驗。</p><p>適合產品展示、諮詢及示範。查詢時可提供產品類型、展示需要及活動地點，方便討論合適安排。</p><div class="format-tags"><span class="tag">Experience</span><span class="tag">Activation</span></div><a aria-label="了解更多：Moving Showroom 流動廣告車" class="format-more" href="/moving-showroom/">了解更多 <span aria-hidden="true">→</span></a></div></article>
+<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/display-truck-480.webp 480w, /images/display-truck-800.webp 800w, /images/display-truck-1122.webp 1122w" type="image/webp"/><img alt="Display Truck 展示廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/display-truck.jpg" width="1122"/></picture><div class="format-copy"><h3>Display Truck｜展示廣告車</h3><p>在城市街頭展示品牌、裝置及活動內容。</p><p>適合品牌曝光、產品展示及巡迴推廣。查詢時可提供展示內容、目標地區及活動日期。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article>
+<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/small-truck-480.webp 480w, /images/small-truck-800.webp 800w, /images/small-truck-1122.webp 1122w" type="image/webp"/><img alt="Small Truck 小型流動廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/small-truck.jpg" width="1122"/></picture><div class="format-copy"><h3>Small Truck｜小型流動廣告車</h3><p>靈活穿梭不同地區，適合品牌曝光與推廣。</p><p>適合地區推廣及品牌曝光。查詢時可說明希望接觸的受眾、活動地區及預計日數。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article>
+<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/volkswagen-t2-480.webp 480w, /images/volkswagen-t2-800.webp 800w, /images/volkswagen-t2-1122.webp 1122w" type="image/webp"/><img alt="Volkswagen T2 復古廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/volkswagen-t2.jpg" width="1122"/></picture><div class="format-copy"><h3>Volkswagen T2｜復古廣告車</h3><p>以搶眼復古造型，營造具話題性的活動場景。</p><p>適合品牌體驗及現場互動。查詢時可提供活動主題、場景需要及預計日期。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
+<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/ice-cream-truck-480.webp 480w, /images/ice-cream-truck-800.webp 800w, /images/ice-cream-truck-1122.webp 1122w" type="image/webp"/><img alt="Ice Cream Truck 雪糕車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/ice-cream-truck.jpg" width="1122"/></picture><div class="format-copy"><h3>Ice Cream Truck｜雪糕車</h3><p>將品牌與派發、試食及街頭互動結合。</p><p>適合試食、派發及現場互動。查詢時可說明派發內容、目標受眾及活動需要。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
+<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/tram-parade-480.webp 480w, /images/tram-parade-800.webp 800w, /images/tram-parade-1122.webp 1122w" type="image/webp"/><img alt="Tram Parade 電車巡遊" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/tram-parade.jpg" width="1122"/></picture><div class="format-copy"><h3>Tram Parade｜電車巡遊</h3><p>以電車巡遊形式，打造城市中的品牌體驗與互動。</p><p>適合品牌體驗及活動推廣。查詢時可提供活動目標、預計日期及參與安排的需要。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
+<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/crystal-bus-480.webp 480w, /images/crystal-bus-800.webp 800w, /images/crystal-bus-1122.webp 1122w" type="image/webp"/><img alt="Crystal Bus 水晶巴士" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/crystal-bus.jpg" width="1122"/></picture><div class="format-copy"><h3>Crystal Bus｜水晶巴士</h3><p>以水晶巴士呈現品牌活動，連結乘客與城市場景。</p><p>適合品牌體驗及活動推廣。查詢時可說明活動主題、乘客體驗及展示需要。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
+</div>
+</section></div><section aria-labelledby="process-heading" class="section activation-process shell" id="process">
 <div class="section-head process-head">
 <h2 id="process-heading">FROM <span>BRIEF</span> TO STREET</h2><p>由策劃到現場推廣　<br class="mobile-break"/>將流動廣告車及品牌 activation 逐步落地</p>
 </div>
@@ -397,38 +496,13 @@
 <img alt="MEGURI 推廣員在街頭品牌活動中與參加者互動" decoding="async" height="1402" loading="lazy" src="/images/activation-promoters.jpg" width="1122"/>
 </picture>
 </div>
-</section>
-<section class="section formats shell" id="formats">
-<div class="section-head"><h2>CHOOSE YOUR <span>FORMAT</span></h2><p>不同形式配合不同 Campaign 目標　<br class="mobile-break"/>讓品牌走進更多場景</p></div>
-<div class="format-toolbar">
-<span aria-live="polite" class="format-counter" id="format-counter">01 / 07</span>
-<div class="format-arrows">
-<button aria-controls="format-slider" aria-label="上一款車型" class="format-arrow" data-step="-1" type="button"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
-<button aria-controls="format-slider" aria-label="下一款車型" class="format-arrow" data-step="1" type="button"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
-</div>
-</div>
-<div aria-label="七款車型，左右滑動瀏覽" class="format-grid" id="format-slider" role="region" tabindex="0">
-<article class="format-card"><a aria-label="了解 Moving Showroom 流動廣告車詳情" class="format-image-link" href="/moving-showroom/"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/moving-showroom-480.webp 480w, /images/moving-showroom-800.webp 800w, /images/moving-showroom-1122.webp 1122w" type="image/webp"/><img alt="Moving Showroom 流動廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/moving-showroom.jpg" width="1122"/></picture></a><div class="format-copy"><h3><a class="format-title-link" href="/moving-showroom/">Moving Showroom｜流動廣告車</a></h3><p>以可進入的車廂展示產品，打造近距離品牌體驗。</p><p>適合產品展示、諮詢及示範。查詢時可提供產品類型、展示需要及活動地點，方便討論合適安排。</p><div class="format-tags"><span class="tag">Experience</span><span class="tag">Activation</span></div><a aria-label="了解更多：Moving Showroom 流動廣告車" class="format-more" href="/moving-showroom/">了解更多 <span aria-hidden="true">→</span></a></div></article>
-<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/display-truck-480.webp 480w, /images/display-truck-800.webp 800w, /images/display-truck-1122.webp 1122w" type="image/webp"/><img alt="Display Truck 展示廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/display-truck.jpg" width="1122"/></picture><div class="format-copy"><h3>Display Truck｜展示廣告車</h3><p>在城市街頭展示品牌、裝置及活動內容。</p><p>適合品牌曝光、產品展示及巡迴推廣。查詢時可提供展示內容、目標地區及活動日期。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article>
-<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/small-truck-480.webp 480w, /images/small-truck-800.webp 800w, /images/small-truck-1122.webp 1122w" type="image/webp"/><img alt="Small Truck 小型流動廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/small-truck.jpg" width="1122"/></picture><div class="format-copy"><h3>Small Truck｜小型流動廣告車</h3><p>靈活穿梭不同地區，適合品牌曝光與推廣。</p><p>適合地區推廣及品牌曝光。查詢時可說明希望接觸的受眾、活動地區及預計日數。</p><span class="tag">Visibility</span><span class="tag">Activation</span></div></article>
-<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/volkswagen-t2-480.webp 480w, /images/volkswagen-t2-800.webp 800w, /images/volkswagen-t2-1122.webp 1122w" type="image/webp"/><img alt="Volkswagen T2 復古廣告車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/volkswagen-t2.jpg" width="1122"/></picture><div class="format-copy"><h3>Volkswagen T2｜復古廣告車</h3><p>以搶眼復古造型，營造具話題性的活動場景。</p><p>適合品牌體驗及現場互動。查詢時可提供活動主題、場景需要及預計日期。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
-<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/ice-cream-truck-480.webp 480w, /images/ice-cream-truck-800.webp 800w, /images/ice-cream-truck-1122.webp 1122w" type="image/webp"/><img alt="Ice Cream Truck 雪糕車" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/ice-cream-truck.jpg" width="1122"/></picture><div class="format-copy"><h3>Ice Cream Truck｜雪糕車</h3><p>將品牌與派發、試食及街頭互動結合。</p><p>適合試食、派發及現場互動。查詢時可說明派發內容、目標受眾及活動需要。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
-<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/tram-parade-480.webp 480w, /images/tram-parade-800.webp 800w, /images/tram-parade-1122.webp 1122w" type="image/webp"/><img alt="Tram Parade 電車巡遊" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/tram-parade.jpg" width="1122"/></picture><div class="format-copy"><h3>Tram Parade｜電車巡遊</h3><p>以電車巡遊形式，打造城市中的品牌體驗與互動。</p><p>適合品牌體驗及活動推廣。查詢時可提供活動目標、預計日期及參與安排的需要。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
-<article class="format-card"><picture><source sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 900px) 50vw, 440px" srcset="/images/crystal-bus-480.webp 480w, /images/crystal-bus-800.webp 800w, /images/crystal-bus-1122.webp 1122w" type="image/webp"/><img alt="Crystal Bus 水晶巴士" decoding="async" height="1402" loading="lazy" onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(function(source){source.remove();}); this.src=this.getAttribute('src');" src="/images/crystal-bus.jpg" width="1122"/></picture><div class="format-copy"><h3>Crystal Bus｜水晶巴士</h3><p>以水晶巴士呈現品牌活動，連結乘客與城市場景。</p><p>適合品牌體驗及活動推廣。查詢時可說明活動主題、乘客體驗及展示需要。</p><span class="tag">Experience</span><span class="tag">Activation</span></div></article>
-</div>
-</section>
-<section class="section shell" id="uses">
-<div class="section-head"><h2>BEST FOR / <span>USE CASES</span></h2><p>按不同 Campaign 目標　<br class="mobile-break"/>配對合適推廣場景與互動形式</p></div>
-<div class="usecase-grid">
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M4 7h16v11H4zM7 4h10v3H7z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M8 11h8M8 14h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><strong>Product display</strong><small>產品展示</small></div></div>
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M5 8h14l-1 11H6L5 8Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><strong>Sampling</strong><small>產品試用／派發</small></div></div>
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M4 5h16v11H9l-5 3V5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><strong>Consultation / Demo</strong><small>諮詢／產品示範</small></div></div>
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="m14 4 6 6-8 8-7 1 1-7 8-8Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="m12 6 6 6M5 19l4-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><strong>Launch</strong><small>新品發佈</small></div></div>
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M4 17V7h11l4 4v6H4Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><circle cx="8" cy="18" r="2" stroke="currentColor" stroke-width="1.7"></circle><circle cx="17" cy="18" r="2" stroke="currentColor" stroke-width="1.7"></circle><path d="M15 7v4h4" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path></svg></span><div><strong>Roadshow</strong><small>巡迴推廣</small></div></div>
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.7"></circle><path d="M4 19c.6-3.4 2.4-5 5-5s4.4 1.6 5 5M16 8h4M18 6v4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><strong>Lead generation</strong><small>潛在客戶收集</small></div></div>
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M6 4h12v16H6z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M9 9h6M9 13h4M9 17h3" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><strong>Registration</strong><small>登記／會員招募</small></div></div>
-<div class="usecase"><span aria-hidden="true" class="icon"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"></circle><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"></circle><path d="M12 4v2M12 18v2M4 12h2M18 12h2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span><div><strong>On-site activation</strong><small>內容製作／現場互動</small></div></div>
-</div>
+</section><section aria-labelledby="p2-gi-title" class="section shell p2-gi" id="global-inspiration">
+<div class="section-head"><h2 id="p2-gi-title">GLOBAL <span>INSPIRATION</span></h2><p>海外品牌案例與創意參考</p></div>
+<div class="p2-gi-grid">
+<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_MOBILE.png"/><img alt="AI 概念圖：流動展示車作為產品體驗及商務交流空間" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">01 / MOVING SHOWROOM</span><h3>BANNER ENGINEERING</h3><span class="p2-gi-type">US · VISIBILITY / EXPERIENCE</span></div><div class="p2-gi-body"><p>以流動展廳結合產品展示與客戶交流，將產品體驗帶到不同地區。</p></div></article>
+<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_SAMPLING_ACTIVATION_MOBILE.png"/><img alt="AI 概念圖：流動雪糕車進行試食與街頭互動" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_SAMPLING_ACTIVATION_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">02 / SAMPLING / ACTIVATION</span><h3>LITTLE MOONS</h3><span class="p2-gi-type">UK · ACTIVATION / EXPERIENCE</span></div><div class="p2-gi-body"><p>以流動雪糕車配合產品試食及街頭互動，讓受眾透過實際體驗認識品牌。</p></div></article>
+<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_CREATIVE_VEHICLE_MOBILE.png"/><img alt="AI 概念圖：移動式品牌展示車結合體驗及現場活動" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_CREATIVE_VEHICLE_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">03 / CREATIVE VEHICLE</span><h3>ADIDAS FÚTBOL SOCIETY</h3><span class="p2-gi-type">US · VISIBILITY / ACTIVATION / EXPERIENCE</span></div><div class="p2-gi-body"><p>以特製展示車結合產品陳列與現場活動，讓車輛成為品牌故事的一部分。</p></div></article>
+</div><div class="p2-gi-actions"><a class="p2-text-link" href="PHASE2_GLOBAL_INSPIRATION_2026_1011_1109.html">探索更多全球品牌案例 →</a><p class="p2-gi-disclaimer">圖片為 AI 創意示意</p></div>
 </section>
 <section aria-labelledby="faq-heading" class="section shell" id="faq">
 <div class="section-head"><h2 id="faq-heading">F<span>A</span>Q</h2><p>查詢流動廣告車及品牌活動前　<br class="mobile-break"/>先了解常見問題與所需資料</p></div>
@@ -578,6 +652,10 @@ function gtag_report_conversion(url) {
  stage.addEventListener('mouseenter',stop);stage.addEventListener('mouseleave',start);stage.addEventListener('focusin',stop);stage.addEventListener('focusout',start);
  document.addEventListener('visibilitychange',start);reduced.addEventListener('change',start);
  show(0);start();
+})();
+</script></body>
+</html>
+
 })();
 </script></body>
 </html>
