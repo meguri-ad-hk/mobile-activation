@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<link href="images/favicon.png" rel="icon" sizes="96x96" type="image/png"/>
+<meta charset="utf-8"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-18497496047"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18497496047');
+</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ff008c" name="theme-color"/>
+<meta content="MEGURI 提供流動廣告車及品牌活動推廣方案，展示七款形式：流動廣告車、展示廣告車、小型廣告車、Volkswagen T2、雪糕車、電車巡遊及水晶巴士。透過網上表格或 WhatsApp 查詢你的活動需要。" name="description"/>
+<title>香港流動廣告車及品牌活動推廣｜MEGURI</title>
+<meta content="website" property="og:type"/>
+<meta content="zh_HK" property="og:locale"/>
+<meta content="MEGURI" property="og:site_name"/>
+<meta content="香港流動廣告車及品牌活動推廣｜MEGURI" property="og:title"/>
+<meta content="MEGURI 提供流動廣告車及品牌活動推廣方案，展示七款形式：流動廣告車、展示廣告車、小型廣告車、Volkswagen T2、雪糕車、電車巡遊及水晶巴士。透過網上表格或 WhatsApp 查詢你的活動需要。" property="og:description"/>
+<meta content="https://megurihk.com/images/hero-1.jpg" property="og:image"/>
+<meta content="MEGURI 流動廣告車及品牌活動推廣" property="og:image:alt"/>
+<meta content="summary" name="twitter:card"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MEGURI",
+  "url": "https://megurihk.com/",
+  "logo": "https://megurihk.com/images/meguri-logo.jpeg",
+  "description": "流動廣告車及品牌活動推廣方案。",
+  "telephone": "+85284826854",
+  "sameAs": [
+    "https://www.instagram.com/meguri.ad/"
+  ]
+}
+  </script>
+<style>
+    :root { --pink:#f90089; --soft:#ffe0f0; --ink:#111; --muted:#59545b; --line:#f5d8e7; --shadow:0 16px 44px rgba(125,0,66,.12); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:#fff; font-family:Arial,"Noto Sans TC","Microsoft JhengHei",sans-serif; }
+    a { color:inherit; }
+    button,input,select,textarea { font:inherit; }
+    .shell { width:min(1180px,calc(100% - 48px)); margin:auto; }
+    .topbar { position:sticky; top:0; z-index:50; background:rgba(255,255,255,.97); box-shadow:0 2px 18px rgba(0,0,0,.055); }
+    .nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .logo { position:relative; display:block; flex:none; width:188px; height:42px; overflow:hidden; text-decoration:none; }
+    .logo img { position:absolute; top:50%; left:50%; width:145%; max-width:none; height:auto; transform:translate(-50%,-50%); }
+    .nav-links { display:flex; gap:26px; align-items:center; }
+    .nav-links a { text-decoration:none; font-weight:700; font-size:.9rem; white-space:nowrap; }
+    .nav-links a:hover { color:var(--pink); }
+    .pill { display:inline-flex; align-items:center; justify-content:center; gap:10px; border:0; border-radius:999px; background:var(--pink); color:white; padding:14px 24px; font-weight:800; text-decoration:none; cursor:pointer; box-shadow:0 7px 15px rgba(249,0,137,.22); }
+    .pill:hover { background:#d90079; transform:translateY(-1px); }
+    .nav-cta { padding:11px 20px; white-space:nowrap; }
+    .hero { position:relative; isolation:isolate; overflow:hidden; padding:72px 0 94px; }
+    .hero::before,.hero::after { content:""; position:absolute; z-index:-1; background:var(--soft); transform:rotate(38deg); border-radius:52px; }
+    .hero::before { width:290px; height:290px; top:-190px; left:-80px; }
+    .hero::after { width:230px; height:230px; top:-80px; right:-90px; }
+    .hero-inner { display:grid; grid-template-columns: .95fr 1.05fr; gap:34px; align-items:center; }
+    .eyebrow { color:var(--pink); font-weight:950; letter-spacing:.08em; font-size:1.1rem; }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2 { font-family:Impact,"Arial Black",Arial,sans-serif; font-stretch:condensed; letter-spacing:.01em; }
+    h1 { font-size:clamp(3.7rem,7vw,7.3rem); line-height:.93; margin:22px 0 18px; }
+    h1 span,h2 span { color:var(--pink); }
+    .hero-zh { font-size:clamp(1.6rem,3vw,2.5rem); font-weight:950; margin:0 0 14px; }
+    .hero-description { color:var(--muted); font-size:1.1rem; line-height:1.6; max-width:530px; margin-bottom:26px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .pill-outline { background:#fff; color:var(--pink); border:2px solid var(--pink); box-shadow:none; }
+    .pill-outline:hover { background:#fff0f8; color:#bc006c; }
+    .hero-media { min-width:0; overflow:hidden; padding:18px 0 26px; }
+    .hero-track { display:flex; width:100%; animation:hero-loop 24s linear infinite; }
+    .hero-media:hover .hero-track,.hero-media:focus-within .hero-track { animation-play-state:paused; }
+    .hero-slide-group { width:100%; flex:none; display:flex; padding-right:12px; gap:12px; }
+    .hero-slide { width:calc((100% - 24px) / 3); flex:none; margin:0; border-radius:17px; overflow:hidden; border:1px solid var(--line); background:#fff; box-shadow:var(--shadow); }
+    .hero-slide picture,.format-card picture { display:block; }
+    .hero-slide img { display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:contain; }
+    @keyframes hero-loop { to { transform:translateX(-100%); } }
+    section { scroll-margin-top:90px; }
+    .section { padding:64px 0; }
+    .section-head { display:block; margin-bottom:28px; }
+    h2 { font-size:clamp(2.5rem,4.8vw,4.8rem); line-height:1.02; margin:0; }
+    .section-head p { color:var(--muted); font-size:.92rem; line-height:1.6; max-width:660px; margin:6px 0 0; }
+    .mobile-break { display:none; }
+    .benefits { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .benefit,.usecase { background:linear-gradient(120deg,#fff1f8,#fff7fb); border:1px solid #ffe8f4; border-radius:18px; padding:22px; display:flex; gap:15px; align-items:center; }
+    .benefit strong,.usecase strong { display:block; font-size:1.07rem; }
+    .benefit small,.usecase small { display:block; color:var(--muted); margin-top:5px; line-height:1.4; }
+
+    .value-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .value-card { background:linear-gradient(120deg,#fff1f8,#fff8fc); border:1px solid #ffe4f2; border-radius:20px; padding:24px; display:flex; gap:16px; align-items:flex-start; min-width:0; }
+    .value-icon { width:48px; height:48px; border-radius:14px; display:grid; place-items:center; flex:none; color:#fff; background:var(--pink); }
+    .value-icon svg { width:25px; height:25px; display:block; }
+    .value-copy { min-width:0; }
+    .value-kicker { display:block; color:var(--pink); font-size:.74rem; font-weight:900; letter-spacing:.09em; margin:1px 0 5px; }
+    .value-copy h3 { font-size:1.22rem; line-height:1.3; margin:0 0 6px; }
+    .value-copy p { color:var(--muted); font-size:.92rem; line-height:1.55; margin:0; }
+    .icon { width:50px; height:50px; border-radius:50%; display:grid; place-items:center; flex:none; color:#fff; background:var(--pink); font-size:1.5rem; }
+    .formats { padding-top:64px; }
+    .format-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:18px; }
+    .format-card { flex:0 0 calc((100% - 36px) / 3); min-width:0; border:1px solid #f0e0e9; border-radius:23px; overflow:hidden; background:#fff; box-shadow:0 9px 24px rgba(0,0,0,.055); }
+    .format-card img { display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:contain; background:#fff3f9; }
+    .format-image-link { display:block; text-decoration:none; }
+    .format-title-link { text-decoration:none; }
+    .format-tags { display:flex; flex-wrap:wrap; gap:5px; align-items:center; }
+    .format-copy .format-more { display:block; clear:both; width:fit-content; margin:20px 0 0; padding:4px 0 2px; color:var(--pink); font-size:1rem; line-height:1.5; font-weight:800; text-decoration:none; }
+    .format-image-link:hover img { opacity:.94; }
+    .format-title-link:hover,.format-more:hover { text-decoration:underline; text-underline-offset:3px; }
+    .format-copy { padding:19px 19px 22px; }
+    .format-copy h3 { font-size:1.3rem; margin:0 0 7px; }
+    .format-copy p { color:var(--muted); font-size:.95rem; line-height:1.5; margin:0 0 14px; }
+    .tag { display:inline-block; border-radius:999px; background:#ffe1f0; color:#a5005f; font-weight:750; font-size:.77rem; padding:7px 10px; margin:2px 5px 0 0; }
+    .usecase-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+    .usecase { padding:18px; }
+    .usecase .icon { width:43px; height:43px; border-radius:13px; background:transparent; color:var(--pink); font-size:1.6rem; }
+    .usecase .icon svg { width:25px; height:25px; display:block; }
+    .enquiry { position:relative; overflow:hidden; background:linear-gradient(145deg,#fff,#fff6fb); border-top:1px solid var(--line); padding:78px 0 85px; }
+    .enquiry-inner { display:grid; grid-template-columns:.75fr 1.25fr; gap:46px; align-items:start; }
+    .enquiry-copy p { color:var(--muted); font-size:1.06rem; line-height:1.55; margin:22px 0 0; }
+    .form-card { background:#fff; border:1px solid var(--line); border-radius:22px; box-shadow:var(--shadow); padding:30px; }
+    .fields { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    label { display:block; font-size:.85rem; font-weight:750; margin:0 0 7px; }
+    label .required { color:#d00068; }
+    input,select,textarea { width:100%; min-height:44px; border:1px solid #dfd5dc; border-radius:9px; padding:11px 12px; color:var(--ink); background:#fff; outline:none; }
+    select {
+      appearance:none;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      font-size:.95rem;
+      line-height:1.4;
+      padding:11px 42px 11px 12px;
+      background-color:#fff;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2359545b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat:no-repeat;
+      background-position:right 13px center;
+      background-size:16px 16px;
+      cursor:pointer;
+    }
+    select::-ms-expand { display:none; }
+    input:focus,select:focus,textarea:focus { border-color:var(--pink); box-shadow:0 0 0 3px rgba(249,0,137,.12); }
+    textarea { resize:vertical; min-height:100px; }
+    .full { grid-column:1/-1; }
+    .submit { width:100%; margin-top:20px; }
+    .form-status { min-height:1.4em; font-size:.9rem; line-height:1.4; margin:12px 0 0; color:#a00056; }
+    footer { border-top:1px solid var(--line); padding:30px 0; }
+    .footer-inner { display:grid; grid-template-columns:190px minmax(0,1fr) 245px; gap:28px; align-items:center; }
+    .footer-brand p { color:var(--muted); margin:6px 0 0; font-size:.75rem; white-space:nowrap; }
+    .footer-contacts { display:flex; justify-content:center; flex-wrap:wrap; gap:18px; padding:7px 24px; border-left:1px solid #ccc; }
+    .footer-contact { text-decoration:none; display:flex; align-items:center; gap:9px; min-width:0; font-size:.76rem; line-height:1.35; }
+    .footer-contact strong,.footer-contact small { display:block; }
+    .footer-contact small { color:var(--muted); font-size:inherit; }
+    .footer-contact:hover { color:var(--pink); }
+    .footer-contact:hover .footer-icon { background:#d90079; }
+    .footer-icon { display:grid; place-items:center; flex:none; width:38px; height:38px; border-radius:50%; color:white; background:var(--pink); }
+    .footer-icon svg { width:23px; height:23px; }
+    .footer-disclaimer { color:#777079; font-size:.68rem; line-height:1.4; border-left:1px solid #ccc; padding-left:27px; margin:0; }
+    .whatsapp-float { position:fixed; right:22px; bottom:calc(22px + env(safe-area-inset-bottom)); z-index:60; width:62px; height:62px; background:#25d366; color:#fff; display:grid; place-items:center; border:3px solid #fff; border-radius:50%; box-shadow:0 7px 23px rgba(0,0,0,.25); transition:transform .2s; }
+    .whatsapp-float:hover { transform:translateY(-4px); }
+    .whatsapp-float svg { width:35px; height:35px; }
+    :focus-visible { outline:3px solid #ff6bb8; outline-offset:3px; }
+
+    /* FAQ typography / spacing aligned with the existing MEGURI content rhythm. */
+    #faq h3 { font-size:1.22rem; line-height:1.4; margin:0 0 9px; }
+    #faq > p { color:var(--muted); font-size:.96rem; line-height:1.65; margin:0 0 30px; max-width:980px; }
+    #faq > p:last-child { margin-bottom:0; }
+    @media(max-width:900px) {
+      .nav-links { gap:14px; }
+      .nav-links a { font-size:.8rem; }
+      .hero-inner,.enquiry-inner { grid-template-columns:1fr; }
+      .hero-media { max-width:620px; }
+      .format-card { flex-basis:calc((100% - 18px) / 2); }
+      .usecase-grid { grid-template-columns:repeat(2,1fr); }
+      .value-grid { gap:14px; }
+      .footer-inner { grid-template-columns:1fr; gap:17px; }
+      .footer-contacts { justify-content:flex-start; border-left:0; border-top:1px solid var(--line); padding:18px 0 0; }
+      .footer-disclaimer { border-left:0; border-top:1px solid var(--line); padding:16px 0 0; }
+    }
+    @media(max-width:640px) {
+      .shell { width:min(100% - 32px,1180px); }
+      .nav { min-height:65px; }
+      .logo { width:144px; height:35px; }
+
+      #faq h3 { font-size:1.15rem; margin-bottom:8px; }
+      #faq > p { font-size:.96rem; line-height:1.65; margin-bottom:24px; }
+      .nav-links { display:none; }
+      .nav-cta { font-size:.8rem; padding:10px 13px; }
+      .hero { padding:45px 0 48px; }
+      .section { padding:48px 0; }
+      h1 { font-size:clamp(3.55rem,13vw,5.8rem); }
+      .hero-slide-group { gap:8px; padding-right:8px; }
+      .hero-slide { width:calc((100% - 16px) / 3); }
+      .section-head p { font-size:.9rem; line-height:1.6; margin-top:6px; max-width:100%; }
+      .mobile-break { display:block; }
+      .benefits,.usecase-grid { grid-template-columns:1fr; }
+      .value-grid { grid-template-columns:1fr; gap:14px; }
+      .value-card { padding:20px; }
+      .value-icon { width:44px; height:44px; border-radius:13px; }
+      .format-card { flex-basis:100%; }
+      .fields { grid-template-columns:1fr; }
+      .form-card { padding:20px; }
+      .footer-contacts { gap:18px 22px; }
+      .whatsapp-float { right:15px; bottom:calc(15px + env(safe-area-inset-bottom)); width:57px; height:57px; }
+      .enquiry { padding-bottom:110px; }
+      footer { padding-bottom:calc(96px + env(safe-area-inset-bottom)); }
+    }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .pill,.whatsapp-float { transition:none; } .hero-track { animation:none; } }
+
+    /* Reference lock: the supplied aligned hero mockup and seven-format carousel. */
+    .format-toolbar { display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; }
+    .format-counter { font-size:.8rem; color:var(--muted); letter-spacing:.08em; }
+    .format-arrows { display:flex; gap:10px; }
+    .format-arrow { display:grid; place-items:center; width:44px; height:44px; border:1px solid #d7c6cf; border-radius:50%; background:#fff; color:#111; cursor:pointer; }
+    .format-arrow svg { width:20px; height:20px; }
+    .format-arrow:hover:not(:disabled) { color:var(--pink); border-color:var(--pink); }
+    .format-arrow:disabled { opacity:.3; cursor:default; }
+    .format-grid { flex-wrap:nowrap; justify-content:flex-start; overflow-x:auto; scroll-snap-type:x mandatory; overscroll-behavior-x:contain; gap:22px; padding:2px 2px 20px; scrollbar-width:thin; scrollbar-color:#e1b3ce transparent; }
+    .format-card { flex:0 0 calc((100% - 44px) / 2.8); scroll-snap-align:start; }
+    .format-card:last-child { scroll-snap-align:end; }
+    @media(min-width:901px) {
+      .hero-inner { grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); align-items:start; gap:38px; }
+      .hero-content .eyebrow,.hero-content .hero-actions { display:none; }
+      .hero-content h1 { font-size:clamp(3.7rem,5.6vw,5.5rem); margin:0 0 22px; }
+      .hero-content .hero-description { margin-bottom:0; }
+      .hero-media { --hero-height:520px; height:var(--hero-height); max-width:none; padding:0; border-radius:18px; }
+      .hero-track { width:max-content; height:100%; animation:hero-desktop-loop 24s linear infinite; }
+      .hero-slide-group { width:auto; height:100%; padding-right:18px; gap:18px; }
+      .hero-slide { width:calc(var(--hero-height) * .8); height:100%; border-radius:18px; box-shadow:none; }
+      .hero-slide picture { height:100%; }
+      .hero-slide img { height:100%; aspect-ratio:auto; object-fit:contain; }
+    }
+    @keyframes hero-desktop-loop { to { transform:translateX(-50%); } }
+    @media(max-width:900px) { .format-card { flex-basis:calc((100% - 22px) / 1.8); } }
+    @media(max-width:640px) { .format-card { flex-basis:88%; } .format-toolbar { margin-bottom:16px; } }
+    @media(prefers-reduced-motion:reduce) { .hero-track { animation:none; } }
+
+    /* MEGURI 4-step activation process — safe preview v4 */
+    .activation-process { padding:64px 0; }
+    .process-head { display:block; margin-bottom:26px; }
+    .process-layout { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(300px,.78fr); gap:24px; align-items:stretch; }
+    .process-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .process-step { min-width:0; background:linear-gradient(120deg,#fff1f8,#fff7fb); border:1px solid #ffe8f4; border-radius:18px; padding:22px; }
+    .process-icon { width:50px; height:50px; border-radius:50%; display:grid; place-items:center; background:#fff; color:var(--pink); margin:0 0 15px; }
+    .process-icon svg { width:25px; height:25px; }
+    .process-heading { display:flex; align-items:baseline; gap:10px; margin:0 0 10px; }
+    .process-number { color:var(--pink); font-family:Impact,"Arial Black",Arial,sans-serif; font-size:2.15rem; line-height:1; letter-spacing:.01em; }
+    .process-title { font-weight:900; font-size:1.08rem; line-height:1.2; }
+    .process-zh { font-weight:800; font-size:1.02rem; line-height:1.35; margin:0 0 11px; }
+    .process-step p { color:var(--muted); font-size:.94rem; line-height:1.55; margin:0; }
+    .process-photo { display:block; margin:0; overflow:hidden; border-radius:18px; border:1px solid var(--line); background:#fff3f9; align-self:stretch; }
+    .process-photo img { display:block; width:100%; height:100%; min-height:100%; object-fit:cover; object-position:center; }
+
+    @media(min-width:901px) {
+      .activation-process { padding:64px 0; }
+      .process-photo { aspect-ratio:4/5; }
+      .process-photo img { aspect-ratio:4/5; }
+    }
+
+    @media(max-width:900px) {
+      .process-layout { grid-template-columns:1fr; gap:22px; }
+      .process-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .process-photo { width:min(520px,100%); margin:0 auto; aspect-ratio:4/5; }
+      .process-photo img { aspect-ratio:4/5; }
+    }
+
+    @media(max-width:640px) {
+      .activation-process { padding:48px 0; }
+      .process-head { margin-bottom:28px; }
+      .process-layout { display:block; }
+      .process-grid { grid-template-columns:1fr; gap:0; margin-bottom:26px; }
+      .process-step { position:relative; display:grid; grid-template-columns:62px minmax(0,1fr); column-gap:16px; padding:0 0 30px; background:transparent; border:0; border-radius:0; }
+      .process-step:not(:last-child)::after { content:""; display:block; position:absolute; left:30px; top:66px; bottom:4px; width:2px; background:var(--pink); opacity:.35; }
+      .process-icon { grid-column:1; grid-row:1 / span 3; width:62px; height:62px; margin:0; background:#fff0f8; }
+      .process-icon svg { width:31px; height:31px; }
+      .process-heading,.process-zh,.process-step p { grid-column:2; }
+      .process-heading { margin:2px 0 10px; }
+      .process-number { font-size:2rem; }
+      .process-title { font-size:1.05rem; }
+      .process-zh { font-size:1.02rem; margin-bottom:11px; }
+      .process-step p { font-size:.94rem; line-height:1.55; }
+      .process-photo { width:100%; margin:0; border-radius:18px; aspect-ratio:4/5; }
+      .process-photo img { aspect-ratio:4/5; }
+    }
+
+  
+/* MEGURI Phase 1: Approved panorama hero and WHAT WE DO; original site headers retained */
+.meguri-panorama{padding:0;scroll-margin-top:76px}
+.panorama-stage{position:relative;isolation:isolate;overflow:hidden;min-height:clamp(550px,56vw,780px);background:#211820}
+.panorama-frames,.panorama-frame,.panorama-shade{position:absolute;inset:0}
+.panorama-frame{opacity:0;visibility:hidden;transition:opacity .65s ease,visibility .65s ease;z-index:0}
+.panorama-frame.is-active{opacity:1;visibility:visible}
+.panorama-frame picture,.panorama-frame img{width:100%;height:100%;display:block}
+.panorama-frame img{object-fit:cover;object-position:center}
+.panorama-shade{z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(8,7,12,.74) 0%,rgba(8,7,12,.59) 29%,rgba(8,7,12,.14) 69%,rgba(8,7,12,0) 100%)}
+.panorama-inner{position:relative;z-index:2;min-height:inherit;display:flex;align-items:center;padding-top:66px;padding-bottom:94px}
+.panorama-copy{width:min(560px,54%);color:#fff}
+.panorama-heading{font-family:Impact,'Arial Black',Arial,sans-serif;font-size:clamp(3.7rem,6vw,6.25rem);font-weight:900;letter-spacing:.005em;line-height:.97;margin:0 0 34px;color:#fff;text-wrap:balance}
+.panorama-heading span{color:var(--pink)}
+.panorama-zh{font-size:clamp(1.55rem,2.7vw,2.5rem);font-weight:900;line-height:1.4;margin:0 0 15px}
+.panorama-description{font-size:1.05rem;line-height:1.7;max-width:475px;margin:0 0 26px;color:#fff}
+.panorama-cta{font-size:1rem}
+.panorama-dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:3;display:flex;align-items:center;gap:2px}
+/* Keep approved small dots visually, but enlarge actual touch targets. */
+.panorama-dot{position:relative;width:40px;height:40px;border:0;border-radius:50%;padding:0;background:transparent;cursor:pointer;touch-action:manipulation}
+.panorama-dot::before{content:"";position:absolute;left:50%;top:50%;width:11px;height:11px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.65);box-shadow:0 1px 5px rgba(0,0,0,.2)}
+.panorama-dot.is-active::before{background:var(--pink);width:12px;height:12px}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pillar-card{min-width:0;overflow:hidden;background:#fff;border:1px solid #f2e6ed;border-radius:17px;box-shadow:0 8px 24px rgba(0,0,0,.055)}
+.pillar-image{height:260px;overflow:hidden;background:#fff3fa}
+.pillar-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 56%}
+.pillar-card:nth-child(2) .pillar-image img{object-position:center 45%}
+.pillar-info{position:relative;padding:42px 24px 25px;min-height:205px}
+.pillar-icon{position:absolute;top:-29px;left:23px;width:58px;height:58px;border:4px solid #fff;border-radius:50%;background:var(--pink);display:grid;place-items:center;color:white;box-sizing:content-box}
+.pillar-icon::before{content:'';width:27px;height:27px;background-position:center;background-repeat:no-repeat;background-size:contain}
+.pillar-visibility::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.8-6 10-6 10 6 10 6-3.8 6-10 6S2 12 2 12Z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E")}
+.pillar-activation::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 10v4h4l10 5V5L8 10H4Z'/%3E%3Cpath d='m8 14 2 6h3l-2-5M21 9v6'/%3E%3C/svg%3E")}
+.pillar-experience::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='7' r='3'/%3E%3Cpath d='M5 20v-2a7 7 0 0 1 14 0v2M3 8a2 2 0 0 1 2-2M21 8a2 2 0 0 0-2-2'/%3E%3C/svg%3E")}
+.pillar-info h3{font-family:Arial,'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:1.55rem;font-weight:900;line-height:1.2;letter-spacing:0;margin:0 0 7px}
+.pillar-zh{font-size:1.1rem;font-weight:800;line-height:1.4;margin:0 0 15px}
+.pillar-desc{color:var(--muted);font-size:.96rem;line-height:1.65;margin:0}
+@media(max-width:900px){.pillar-grid{gap:14px}.pillar-image{height:210px}.pillar-info{padding:40px 18px 23px;min-height:210px}.pillar-icon{left:17px}}
+@media(max-width:640px){.meguri-panorama{scroll-margin-top:65px}.panorama-stage{height:min(780px,calc(100svh - 65px));min-height:570px;max-height:800px}.panorama-frames .panorama-frame img{object-position:center 33%}.panorama-shade{background:linear-gradient(180deg,rgba(8,7,12,.02) 8%,rgba(8,7,12,.06) 28%,rgba(8,7,12,.7) 56%,rgba(8,7,12,.94) 100%)}.panorama-inner{height:100%;min-height:0;align-items:flex-end;padding-top:190px;padding-bottom:88px}.panorama-copy{width:100%}.panorama-heading{font-size:clamp(2.7rem,10vw,3.6rem);line-height:.98;margin-bottom:25px}.panorama-zh{font-size:1.5rem;margin-bottom:9px}.panorama-description{font-size:.94rem;line-height:1.55;margin-bottom:18px}.panorama-cta{padding:12px 20px;font-size:.91rem}.panorama-dots{bottom:16px}.pillar-grid{grid-template-columns:1fr;gap:18px}.pillar-image{height:auto;aspect-ratio:16/9}.pillar-info{padding:40px 21px 21px;min-height:0}.pillar-icon{top:-28px;left:19px;width:53px;height:53px}.pillar-info h3{font-size:1.35rem}.pillar-zh{font-size:1rem;margin-bottom:10px}.pillar-desc{font-size:.94rem;line-height:1.65}}
+@media(prefers-reduced-motion:reduce){.panorama-frame{transition:none}}
+
+
+/* Phase 2 GI: inherits the approved MEGURI section heading and spacing system */
+.p2-gi{padding-top:64px;padding-bottom:64px}
+.p2-gi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.p2-gi-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff}
+.p2-gi-photo{margin:0;height:248px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f4f4f5}
+.p2-gi-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.p2-gi-head{padding:19px 20px 12px;display:flex;flex-direction:column;gap:7px;background:#f7f7f8}
+.p2-gi-number{font-size:.68rem;font-weight:900;letter-spacing:.10em;color:var(--pink)}
+.p2-gi-head h3{font-size:1.22rem;line-height:1.2;margin:0;color:#111;font-weight:900;letter-spacing:-.01em}
+.p2-gi-type{font-size:.73rem;font-weight:800;color:#57515a;line-height:1.45}
+.p2-gi-body{padding:15px 20px 19px;flex:1}
+.p2-gi-body p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.65}
+.p2-gi-actions{margin-top:24px}
+.p2-text-link{display:inline-block;color:#de007c;font-size:.93rem;font-weight:850;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px}
+@media(max-width:900px){.p2-gi-grid{gap:13px}.p2-gi-photo{height:205px}.p2-gi-head{padding:15px}.p2-gi-body{padding:14px 15px 17px}.p2-gi-head h3{font-size:1.05rem}}
+@media(max-width:640px){.p2-gi{padding-top:48px;padding-bottom:48px}.p2-gi-grid{grid-template-columns:1fr;gap:17px}.p2-gi-photo{height:auto;aspect-ratio:16/10}.p2-gi-head{padding:17px 19px 12px}.p2-gi-head h3{font-size:1.2rem}.p2-gi-body{padding:13px 19px 18px}.p2-gi-actions{margin-top:20px}}
+
+/* Phase 2 background rhythm preview: deliberately only one product zone changes. */
+.p2-pink-band{background:linear-gradient(145deg,#ffffff 0%,#fff6fb 100%);border-block:1px solid #f9e6f0}
+.p2-pink-band .format-card{background:#fff}
+/* These are illustrative third-party vehicle photos, NOT photographs of the named campaigns. */
+.p2-gi-photo{position:relative}
+.p2-gi-photo::after{content:"版面測試照片 · 非該品牌活動";position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);color:#3d333a;border-radius:5px;padding:5px 8px;font:700 11px/1.25 Arial,"Noto Sans TC",sans-serif;pointer-events:none}
+.p2-gi-head{background:#faf9fa}
+@media(max-width:640px){.p2-gi-photo::after{font-size:10px;left:8px;bottom:8px}}
+
+
+/* PHASE 2: merged WHAT WE DO + BEST FOR. Header spacing inherited verbatim from approved Phase 1. */
+#about .section-head{margin-bottom:28px}
+#about .section-head h2{margin:0;line-height:1.02}
+#about .section-head p{margin:6px 0 0;line-height:1.6}
+.pillar-info{display:flex;flex-direction:column}
+.pillar-best{border-top:1px solid #ebe5e9;margin:16px 0 0;padding-top:12px;font-size:.86rem;line-height:1.6;color:#464048}
+.pillar-best strong{color:var(--pink);font-weight:850}
+@media(min-width:641px){.pillar-info{min-height:260px}.pillar-best{margin-top:auto}}
+/* Mobile: retain generous image presence and card separation. No decorative underline under heading. */
+@media(max-width:640px){
+ #about .section-head{margin-bottom:28px}
+ .pillar-grid{gap:24px}
+ .pillar-card{padding:12px;border-radius:19px}
+ .pillar-image{aspect-ratio:4/3;height:auto;border-radius:11px;overflow:hidden}
+ .pillar-image img{object-fit:cover;object-position:center 50%}
+ .pillar-info{padding:35px 10px 12px}
+ .pillar-info h3{margin-bottom:5px}
+ .pillar-best{margin-top:14px;padding-top:12px}
+ .pillar-icon{left:10px;top:-27px}
+}
+
+/* Phase 2 GI caption refinement — no badge/box, unobtrusive grey overlay */
+.p2-gi-photo::after {
+  content: "AI 概念示意 · 非原活動照片";
+  position: absolute;
+  left: auto;
+  right: 12px;
+  bottom: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: rgba(55,55,55,.65);
+  font: 500 10px/1.35 Arial,"Noto Sans TC",sans-serif;
+  letter-spacing: .015em;
+  text-shadow: 0 1px 3px rgba(255,255,255,.8);
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+ .p2-gi-photo::after {right:9px;bottom:8px;font-size:9px;}
+}
+</style>
+<meta content="noindex,nofollow" name="robots"/><style>
+/* Phase 2: new GI concept assets, no third-party campaign photos. */
+.p2-gi-photo::after{content:"AI 概念示意 · 非原活動照片";position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.94);color:#333;border-radius:5px;padding:5px 8px;font:700 11px/1.25 Arial,"Noto Sans TC",sans-serif;pointer-events:none}
+.p2-gi-photo{height:auto;aspect-ratio:4/3;background:#f6f6f6;position:relative}
+.p2-gi-photo picture{display:block;width:100%;height:100%}
+.p2-gi-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-width:640px){.p2-gi-photo{aspect-ratio:4/3;height:auto}.p2-gi-photo::after{left:9px;bottom:9px;font-size:10px}}
+</style><style>
+/* Phase 2 GI: one understated disclosure below the single CTA; never overlay images. */
+.p2-gi-photo::after { content: none !important; display: none !important; }
+.p2-gi-disclaimer { margin: 10px 0 0; padding:0; color:#898989; font:400 12px/1.55 Arial,"Noto Sans TC",sans-serif; letter-spacing:0; }
+@media (max-width:640px){.p2-gi-disclaimer{font-size:11px;margin-top:9px;}}
+</style><style>
+
+/* Phase 3 preview: FROM BRIEF TO STREET timeline. Other site sections unchanged. */
+.activation-process .process-layout {
+  grid-template-columns: minmax(0,1.18fr) minmax(300px,.82fr);
+  align-items:stretch;
+  gap:24px;
+}
+.activation-process .process-grid {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  padding:9px 28px 9px 32px;
+  background:linear-gradient(135deg,#fff9fc,#fff4fa);
+  border:1px solid #ffe5f2;
+  border-radius:19px;
+}
+.activation-process .process-step {
+  position:relative;
+  display:grid;
+  grid-template-columns:52px minmax(0,1fr);
+  column-gap:17px;
+  padding:19px 0 19px 0;
+  min-height:112px;
+  border:0;
+  border-radius:0;
+  background:none;
+}
+.activation-process .process-step:not(:last-child) { border-bottom:1px solid #f4dce9; }
+.activation-process .process-step:not(:last-child)::before {
+  content:'';
+  position:absolute;
+  top:70px;
+  bottom:-34px;
+  left:24px;
+  width:2px;
+  background:linear-gradient(to bottom,#f90089 0%,#f4b8d5 100%);
+  z-index:0;
+}
+.activation-process .process-icon {
+  position:relative;
+  z-index:1;
+  grid-column:1;
+  grid-row:1 / span 3;
+  width:49px;
+  height:49px;
+  margin:0;
+  border:1px solid #ffdbed;
+  background:#fff;
+  box-shadow:0 2px 8px #ef9ac12b;
+}
+.activation-process .process-icon svg { width:23px; height:23px; }
+.activation-process .process-heading {
+  grid-column:2;
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  margin:0 0 4px;
+}
+.activation-process .process-number { font-size:1.95rem; }
+.activation-process .process-title { font-size:1.04rem; }
+.activation-process .process-zh {
+  grid-column:2;
+  font-size:1.01rem;
+  font-weight:800;
+  margin:0 0 5px;
+}
+.activation-process .process-step p {
+  grid-column:2;
+  font-size:.94rem;
+  line-height:1.56;
+  max-width:53ch;
+}
+.activation-process .process-photo { border-radius:19px; }
+@media (max-width:900px) {
+ .activation-process .process-layout {grid-template-columns:1fr;gap:20px;}
+ .activation-process .process-grid {display:flex; padding:6px 22px 6px 25px;}
+ .activation-process .process-step {grid-template-columns:49px minmax(0,1fr);gap:14px;min-height:0;padding:18px 0;}
+ .activation-process .process-step:not(:last-child)::before {left:23px;top:65px;bottom:-31px;}
+ .activation-process .process-photo {width:100%;max-width:520px; margin:0 auto; aspect-ratio:4/3;}
+ .activation-process .process-photo img {aspect-ratio:4/3;min-height:0;}
+}
+@media (max-width:540px) {
+ .activation-process .process-grid {padding:5px 17px 5px 17px;border-radius:16px;}
+ .activation-process .process-step {grid-template-columns:44px minmax(0,1fr);gap:12px;padding:17px 0;}
+ .activation-process .process-icon {width:43px;height:43px;}
+ .activation-process .process-icon svg {width:21px;height:21px;}
+ .activation-process .process-step:not(:last-child)::before {left:21px;top:58px;bottom:-31px;}
+ .activation-process .process-heading {gap:9px;}
+ .activation-process .process-number {font-size:1.75rem;}
+ .activation-process .process-title {font-size:1rem;}
+ .activation-process .process-zh {font-size:.97rem;}
+ .activation-process .process-step p {font-size:.91rem;line-height:1.55;}
+ .activation-process .process-photo {aspect-ratio:4/3;}
+}
+
+
+/* Phase 3 precision layout: content-driven timeline panel; no changes to approved assets. */
+@media (min-width:901px) {
+  .activation-process .process-layout {
+    grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+    align-items:start;
+    gap:24px;
+  }
+  .activation-process .process-grid {
+    height:auto;
+    min-height:0;
+    align-self:start;
+    padding:8px 28px 8px 32px;
+  }
+  .activation-process .process-step {
+    min-height:0;
+  }
+  .activation-process .process-photo {
+    height:auto;
+    min-height:0;
+    max-height:560px;
+    aspect-ratio:4/3;
+    align-self:start;
+  }
+  .activation-process .process-photo img {
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:0;
+    object-fit:cover;
+    object-position:center;
+  }
+}
+
+/* Phase 3 approved bilingual hierarchy and timeline spacing – surgical refinement */
+.activation-process .process-step:not(:last-child) { border-bottom:0; }
+.activation-process .process-step { grid-template-rows:auto auto; row-gap:9px; padding:22px 0; }
+.activation-process .process-heading { margin:0; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; line-height:1.2; }
+.activation-process .process-zh-inline { font-size:.96rem; color:#363636; font-weight:600; }
+.activation-process .process-step p { margin:0; line-height:1.58; }
+@media (max-width:900px) { .activation-process .process-step { padding:22px 0; } }
+@media (max-width:540px) {
+  .activation-process .process-step { padding:21px 0; row-gap:10px; }
+  .activation-process .process-heading { gap:6px; }
+  .activation-process .process-zh-inline { font-size:.91rem; }
+}
+</style>
+<style>
+/* PHASE 3 — OUR VEHICLES: only card styling; preserve section-head typography and spacing */
+#formats .p3-vehicle-card{display:flex;flex-direction:column;align-self:stretch;background:#fff;}
+#formats .p3-vehicle-frame{width:100%;aspect-ratio:4/3;background:#fbf9fa;display:grid;place-items:center;overflow:hidden;}
+#formats .p3-vehicle-frame picture{display:block;width:100%;height:100%;}
+#formats .p3-vehicle-frame img{display:block;width:100%;height:100%;max-height:none;aspect-ratio:4/3;object-fit:contain;background:transparent;}
+#formats .p3-vehicle-copy{padding:21px 22px 23px;display:flex;flex:1;flex-direction:column;align-items:flex-start;gap:0;}
+#formats .p3-eyebrow{font:800 .72rem/1.4 Arial,sans-serif;letter-spacing:.12em;color:#f90089;text-transform:uppercase;margin:0 0 9px;}
+#formats .p3-vehicle-name{font:800 clamp(1.3rem,2vw,1.7rem)/1.16 Arial,'Noto Sans TC',sans-serif;letter-spacing:-.025em;color:#111;margin:0 0 5px;}
+#formats .p3-vehicle-zh{font-size:.94rem;font-weight:700;color:#69636a;margin:0 0 13px;}
+#formats .p3-vehicle-desc{font-size:.93rem;line-height:1.65;color:#39373b;margin:0 0 17px;}
+#formats .p3-best-label{width:100%;border-top:1px solid #eee7eb;padding-top:13px;font:800 .69rem/1.45 Arial,sans-serif;letter-spacing:.12em;color:#817b80;margin-top:auto;}
+#formats .p3-vehicle-best{font-size:.85rem;line-height:1.7;color:#5d5960;margin:6px 0 0;}
+#formats .p3-vehicle-more{display:inline-block;margin-top:15px;color:#f90089;font-weight:800;text-underline-offset:5px;}
+#formats .p3-preview-note{color:#777;font-size:.72rem;line-height:1.6;margin:8px 2px 0;}
+@media(max-width:640px){#formats .p3-vehicle-copy{padding:19px 19px 23px}#formats .p3-vehicle-frame{aspect-ratio:4/3}#formats .p3-vehicle-frame img{aspect-ratio:4/3}#formats .p3-vehicle-name{font-size:1.48rem}}
+</style><meta content="noindex,nofollow" name="robots"/><style>/* MEGURI Phase 3 approved scope-only refinements */
+#formats .p3-vehicle-frame{aspect-ratio:4/3;}
+#formats .p3-vehicle-frame>img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:contain;object-position:center;background:transparent;}
+#formats .p3-best-label{font-size:12px;}
+#formats .p3-vehicle-best{font-size:14.5px;}
+/* Preserve existing Phase 3 header typography and spacing. */
+</style><style id="phase3-precision-final">
+/* Only specified Phase 3 changes. Keep existing global MEGURI creative system. */
+/* Uniform OV bottom rhythm and reserved action row: only the Moving Showroom has a real CTA. */
+#formats .p3-vehicle-card{display:flex;flex-direction:column;height:auto}
+#formats .p3-vehicle-copy{width:100%;min-height:290px;box-sizing:border-box}
+#formats .p3-vehicle-desc{margin-bottom:16px;min-height:3.3em;max-width:38ch}
+#formats .p3-best-label{margin-top:auto}
+#formats .p3-vehicle-best{min-height:1.7em}
+#formats .p3-vehicle-action{height:36px;min-height:36px;display:flex;align-items:flex-end;margin-top:10px;align-self:stretch}
+#formats .p3-vehicle-action .p3-vehicle-more{margin:0}
+/* Aligned ENG | vertical CSS separator | Chinese column on same baseline. */
+.activation-process .process-heading{display:grid;grid-template-columns:3.1rem 7.1rem 2px minmax(0,1fr);gap:9px;align-items:baseline;flex-wrap:nowrap}
+.activation-process .process-number{grid-column:1}
+.activation-process .process-title{grid-column:2;white-space:nowrap}
+.activation-process .process-separator{grid-column:3;background:#474047;height:1em;width:2px;align-self:center}
+.activation-process .process-zh-inline{grid-column:4;white-space:nowrap}
+@media(min-width:901px){
+ .activation-process .process-layout{align-items:stretch}
+ .activation-process .process-grid{align-self:stretch}
+ .activation-process .process-photo{height:auto;aspect-ratio:auto;max-height:none;align-self:stretch;position:relative;min-height:0}
+ .activation-process .process-photo img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 38%;min-height:0}
+ .enquiry .enquiry-copy p{max-width:none;white-space:nowrap}
+}
+@media(max-width:900px){
+ .activation-process .process-heading{grid-template-columns:2.5rem 6.4rem 2px minmax(0,1fr);column-gap:6px}
+ .activation-process .process-photo{height:auto;aspect-ratio:4/3;max-height:none}
+ .activation-process .process-photo img{position:static;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+ .enquiry .enquiry-copy p{white-space:normal}
+}
+@media(max-width:390px){.activation-process .process-heading{grid-template-columns:2.15rem 5.8rem 2px minmax(0,1fr);gap:5px}.activation-process .process-title{font-size:.92rem}.activation-process .process-zh-inline{font-size:.85rem}}
+</style><style>
+/* MEGURI Phase 3: Scoped approved OV, process, FAQ refinements. */
+#formats .p3-vehicle-copy{align-items:stretch}
+#formats .p3-best-row{width:100%;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:6px}
+#formats .p3-best-row .p3-vehicle-best{margin:0;flex:1 1 auto;min-width:0;font-size:14.5px}
+#formats .p3-best-row .p3-vehicle-more{margin:0;flex:0 0 auto;font-size:14.5px;color:#f90089;text-decoration:underline;text-underline-offset:4px;white-space:nowrap;font-weight:800}
+#formats .p3-best-label{margin-top:auto;font-size:12px}
+#formats .p3-vehicle-desc{min-height:3.3em}
+/* Keep all fixed separators in the same column, with less space between title and line. */
+.activation-process .process-heading{grid-template-columns:3.1rem 6.45rem 2px minmax(0,1fr);column-gap:7px}
+#faq .p3-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#faq .p3-faq-card{min-width:0;background:#fff;border:1px solid #f3dfea;border-radius:18px;padding:23px 24px;box-shadow:0 6px 24px rgba(48,13,33,.025)}
+#faq .p3-faq-card h3{font-size:1.12rem;line-height:1.5;color:#181418;font-weight:800;margin:0 0 12px}
+#faq .p3-faq-index{color:#f90089;font:800 .7rem/1.4 Arial,sans-serif;letter-spacing:.07em;vertical-align:middle;margin-right:9px;white-space:nowrap}
+#faq .p3-faq-card p{font-size:.95rem;line-height:1.75;color:#656068;margin:0}
+#faq .p3-faq-card-last{grid-column:1/-1}
+#faq .p3-faq-cta{display:flex;justify-content:flex-end;margin-top:19px}
+#faq .p3-faq-more{font-size:.91rem;font-weight:800;color:#f90089;text-decoration:underline;text-underline-offset:5px;cursor:default}
+@media(max-width:900px){.activation-process .process-heading{grid-template-columns:2.5rem 6.2rem 2px minmax(0,1fr);column-gap:6px}}
+@media(max-width:640px){#faq .p3-faq-grid{grid-template-columns:1fr;gap:12px}#faq .p3-faq-card{padding:19px 18px;border-radius:16px}#faq .p3-faq-card-last{grid-column:auto}#formats .p3-vehicle-desc{min-height:0}#formats .p3-best-row{gap:7px}}
+@media(max-width:390px){.activation-process .process-heading{grid-template-columns:2.15rem 5.95rem 2px minmax(0,1fr);column-gap:5px}}
+</style></head>
+<body>
+<header class="topbar">
+<nav aria-label="主選單" class="nav shell">
+<a aria-label="MEGURI 首頁" class="logo" href="#top"><img alt="MEGURI" height="1600" src="images/meguri-logo.jpeg" width="1600"/></a>
+<div class="nav-links"><a href="#about">服務特色</a><a href="#formats">廣告車款</a><a href="#global-inspiration">靈感案例</a><a href="#process">啟動流程</a><a href="#enquiry">聯絡我們</a></div>
+<a class="pill nav-cta" href="#enquiry">馬上查詢 →</a>
+</nav>
+</header>
+<main id="top">
+<section aria-label="MEGURI brand activation hero" class="meguri-panorama"><div aria-label="MEGURI brand activation scenes" aria-roledescription="carousel" class="panorama-stage" id="panorama-stage"><div class="panorama-frames">
+<div aria-hidden="false" class="panorama-frame is-active" data-slide="0"><picture><source media="(max-width:640px)" srcset="images/carousel.1-mobile.webp"/><img alt="MEGURI Moving Showroom 品牌活動車與受眾互動" fetchpriority="high" height="900" src="images/carousel.1.webp" width="1920"/></picture></div>
+<div aria-hidden="true" class="panorama-frame" data-slide="1"><picture><source media="(max-width:640px)" srcset="images/carousel.2-mobile.webp"/><img alt="MEGURI 雪糕車街頭推廣" height="900" loading="lazy" src="images/carousel.2.webp" width="1920"/></picture></div>
+<div aria-hidden="true" class="panorama-frame" data-slide="2"><picture><source media="(max-width:640px)" srcset="images/carousel.3-mobile.webp"/><img alt="MEGURI Volkswagen T2 復古品牌活動" height="900" loading="lazy" src="images/carousel.3.webp" width="1920"/></picture></div>
+</div><div aria-hidden="true" class="panorama-shade"></div><div class="panorama-inner shell"><div class="panorama-copy"><h1 class="panorama-heading">BRING<br/>YOUR BRAND<br/><span>OUTSIDE</span></h1><p class="panorama-zh">讓品牌出發</p><p class="panorama-description">以流動廣告車及品牌活動，<br class="mobile-break"/>讓品牌走進城市，與受眾直接接觸。</p><a class="pill panorama-cta" href="#enquiry">馬上查詢 <span aria-hidden="true">→</span></a></div></div>
+<div aria-label="選擇 Hero 圖片" class="panorama-dots" role="group"><button aria-current="true" aria-label="顯示第 1 張圖片" class="panorama-dot is-active" data-index="0" type="button"></button><button aria-label="顯示第 2 張圖片" class="panorama-dot" data-index="1" type="button"></button><button aria-label="顯示第 3 張圖片" class="panorama-dot" data-index="2" type="button"></button></div></div></section>
+<section class="section shell" id="about">
+<div class="section-head"><h2>WHAT <span>WE DO</span></h2><p>由流動廣告車到現場推廣　<br class="mobile-break"/>將品牌帶到街頭　與受眾直接接觸</p></div>
+<div class="pillar-grid">
+<article class="pillar-card"><div class="pillar-image"><picture><source media="(max-width: 640px)" srcset="images/HOME_WHAT_WE_DO_VISIBILITY_LED_TRUCK_MOBILE.png"/><img alt="MEGURI LED 廣告車於香港街頭展示品牌訊息，用於品牌曝光及偶像應援" decoding="async" loading="lazy" src="images/HOME_WHAT_WE_DO_VISIBILITY_LED_TRUCK_DESKTOP.png"/></picture></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-visibility"></span><h3>VISIBILITY</h3><p class="pillar-zh">品牌曝光</p><p class="pillar-desc">透過流動廣告媒體，將品牌訊息帶到不同地點，擴大曝光。</p><p class="pillar-best"><strong>Best for：</strong>新品宣傳 · 地區推廣 · 偶像應援</p></div></article>
+<article class="pillar-card"><div class="pillar-image"><img alt="MEGURI 推廣員與街頭受眾互動" decoding="async" height="1536" loading="lazy" src="images/meguri-what-we-do-activation.png" width="1024"/></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-activation"></span><h3>ACTIVATION</h3><p class="pillar-zh">現場推廣</p><p class="pillar-desc">透過派發、試用及互動活動，讓品牌與受眾直接接觸。</p><p class="pillar-best"><strong>Best for：</strong>產品試用 · 街頭互動 · 派發推廣</p></div></article>
+<article class="pillar-card"><div class="pillar-image"><img alt="MEGURI 流動展示車提供品牌體驗" decoding="async" height="1536" loading="lazy" src="images/meguri-what-we-do-experience.png" width="1024"/></div><div class="pillar-info"><span aria-hidden="true" class="pillar-icon pillar-experience"></span><h3>EXPERIENCE</h3><p class="pillar-zh">品牌體驗</p><p class="pillar-desc">以流動展示及體驗空間，讓受眾更深入認識品牌。</p><p class="pillar-best"><strong>Best for：</strong>產品展示 · 流動展廳 · 品牌體驗</p></div></article>
+</div>
+</section>
+<div class="p2-pink-band"><section class="section formats shell" id="formats">
+<div class="section-head"><h2>OUR <span>VEHICLES</span></h2><p>探索不同流動廣告車款，配合品牌曝光、現場推廣及品牌體驗。</p></div>
+<div class="format-toolbar">
+<span aria-live="polite" class="format-counter" id="format-counter">01 / 08</span>
+<div class="format-arrows">
+<button aria-controls="format-slider" aria-label="上一款車型" class="format-arrow" data-step="-1" type="button"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
+<button aria-controls="format-slider" aria-label="下一款車型" class="format-arrow" data-step="1" type="button"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
+</div>
+</div>
+<div aria-label="八款車型，左右滑動瀏覽" class="format-grid" id="format-slider" role="region" tabindex="0"><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Moving Showroom 流動廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_MOVING_SHOWROOM.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">BRAND EXPERIENCE</div><h3 class="p3-vehicle-name">Moving Showroom</h3><p class="p3-vehicle-zh">流動廣告車</p><p class="p3-vehicle-desc">將產品展示與客戶交流帶到指定地點，打造近距離品牌體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">新品發佈 · 產品展示 · 客戶體驗</p><a class="p3-vehicle-more" href="/moving-showroom/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Mini Promo Van 迷你宣傳車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_MINI_PROMO_VAN.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">STREET ACTIVATION</div><h3 class="p3-vehicle-name">Mini Promo Van</h3><p class="p3-vehicle-zh">迷你宣傳車</p><p class="p3-vehicle-desc">小巧車身，靈活配合街頭互動及地區品牌宣傳。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">街頭派發 · 社區推廣 · 偶像應援</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Display Truck 展示廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_DISPLAY_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">BRAND DISPLAY</div><h3 class="p3-vehicle-name">Display Truck</h3><p class="p3-vehicle-zh">展示廣告車</p><p class="p3-vehicle-desc">將品牌裝置與推廣內容帶到街頭，建立鮮明視覺焦點。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">產品展示 · 品牌曝光 · 巡迴推廣</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Small Truck 小型流動廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_SMALL_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">LOCAL VISIBILITY</div><h3 class="p3-vehicle-name">Small Truck</h3><p class="p3-vehicle-zh">小型流動廣告車</p><p class="p3-vehicle-desc">利用流動車身廣告，將品牌訊息帶到不同地區。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">地區宣傳 · 車身廣告 · 品牌曝光</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Volkswagen T2 復古廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_VOLKSWAGEN_T2.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">RETRO ACTIVATION</div><h3 class="p3-vehicle-name">Volkswagen T2</h3><p class="p3-vehicle-zh">復古廣告車</p><p class="p3-vehicle-desc">以復古車型營造有個性嘅品牌活動及打卡體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">主題活動 · 打卡互動 · 品牌推廣</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Ice-Cream Truck 雪糕車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_ICE_CREAM_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">SAMPLING EXPERIENCE</div><h3 class="p3-vehicle-name">Ice-Cream Truck</h3><p class="p3-vehicle-zh">雪糕車</p><p class="p3-vehicle-desc">結合試食、派發及街頭互動，讓消費者親身接觸品牌。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">產品試食 · 街頭派發 · 消費者互動</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Tram Parade 電車巡遊 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_TRAM_PARADE.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">CITY VISIBILITY</div><h3 class="p3-vehicle-name">Tram Parade</h3><p class="p3-vehicle-zh">電車巡遊</p><p class="p3-vehicle-desc">以城市巡遊形式呈現品牌主題，建立沿途曝光。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">城市巡遊 · 節慶活動 · 品牌宣傳</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Crystal Bus 水晶巴士 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_CRYSTAL_BUS.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">MOBILE EXPERIENCE</div><h3 class="p3-vehicle-name">Crystal Bus</h3><p class="p3-vehicle-zh">水晶巴士</p><p class="p3-vehicle-desc">利用特色車廂空間，打造具參與感嘅品牌體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">品牌體驗 · 主題活動 · 特別企劃</p></div></div></article></div><p class="p3-preview-note">預覽說明：Moving Showroom 與 Mini Promo Van 使用已批准的乾淨車圖；其他六款暫沿用網站現有圖片，待逐款完成 Vehicle-only 裁切後替換。</p>
+</section></div><section aria-labelledby="p2-gi-title" class="section shell p2-gi" id="global-inspiration">
+<div class="section-head"><h2 id="p2-gi-title">GLOBAL <span>INSPIRATION</span></h2><p>海外品牌案例與創意參考</p></div>
+<div class="p2-gi-grid">
+<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_MOBILE.png"/><img alt="AI 概念圖：流動展示車作為產品體驗及商務交流空間" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">01 / MOVING SHOWROOM</span><h3>BANNER ENGINEERING</h3><span class="p2-gi-type">US · VISIBILITY / EXPERIENCE</span></div><div class="p2-gi-body"><p>以流動展廳結合產品展示與客戶交流，將產品體驗帶到不同地區。</p></div></article>
+<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_SAMPLING_ACTIVATION_MOBILE.png"/><img alt="AI 概念圖：流動雪糕車進行試食與街頭互動" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_SAMPLING_ACTIVATION_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">02 / SAMPLING / ACTIVATION</span><h3>LITTLE MOONS</h3><span class="p2-gi-type">UK · ACTIVATION / EXPERIENCE</span></div><div class="p2-gi-body"><p>以流動雪糕車配合產品試食及街頭互動，讓受眾透過實際體驗認識品牌。</p></div></article>
+<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_CREATIVE_VEHICLE_MOBILE.png"/><img alt="AI 概念圖：移動式品牌展示車結合體驗及現場活動" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_CREATIVE_VEHICLE_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">03 / CREATIVE VEHICLE</span><h3>ADIDAS FÚTBOL SOCIETY</h3><span class="p2-gi-type">US · VISIBILITY / ACTIVATION / EXPERIENCE</span></div><div class="p2-gi-body"><p>以特製展示車結合產品陳列與現場活動，讓車輛成為品牌故事的一部分。</p></div></article>
+</div><div class="p2-gi-actions"><a class="p2-text-link" href="/global-inspiration.html">探索更多全球品牌案例 →</a><p class="p2-gi-disclaimer">圖片為 AI 創意示意</p></div>
+</section><section aria-labelledby="process-heading" class="section activation-process shell" id="process">
+<div class="section-head process-head">
+<h2 id="process-heading">FROM <span>BRIEF</span> TO STREET</h2><p>從活動構思、車型配對到執行協調，協助品牌將推廣計劃帶到街頭。</p>
+</div>
+<div class="process-layout">
+<div class="process-grid">
+<article class="process-step">
+<span aria-hidden="true" class="process-icon">
+<svg fill="none" viewbox="0 0 32 32"><rect height="20" rx="2" stroke="currentColor" stroke-width="1.8" width="15" x="7" y="4"></rect><path d="M11 9h7M11 13h7M11 17h4" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M20 19.5h5.5a2 2 0 0 1 2 2V25a2 2 0 0 1-2 2H23l-2.5 2v-2H20a2 2 0 0 1-2-2v-3.5a2 2 0 0 1 2-2Z" fill="#fff0f8" stroke="currentColor" stroke-width="1.6"></path></svg>
+</span>
+<div class="process-heading"><span class="process-number">01</span><span class="process-title">BRIEF</span><span aria-hidden="true" class="process-separator"></span><span class="process-zh-inline">了解需求</span></div>
+<p>了解品牌目標、目標受眾及活動需求，掌握預期效果與執行條件。</p>
+</article>
+<article class="process-step">
+<span aria-hidden="true" class="process-icon">
+<svg fill="none" viewbox="0 0 32 32"><path d="M4.5 9 11 6l10 3 6.5-3v17L21 26l-10-3-6.5 3V9Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M11 6v17M21 9v17" stroke="currentColor" stroke-width="1.5"></path><path d="M22.5 4.5a4 4 0 1 1 8 0c0 3-4 7-4 7s-4-4-4-7Z" fill="#fff0f8" stroke="currentColor" stroke-width="1.6"></path><circle cx="26.5" cy="4.5" fill="currentColor" r="1.2"></circle></svg>
+</span>
+<div class="process-heading"><span class="process-number">02</span><span class="process-title">PLAN</span><span aria-hidden="true" class="process-separator"></span><span class="process-zh-inline">策劃方案</span></div>
+<p>建議合適車型及推廣形式，規劃活動內容、地點與執行安排。</p>
+</article>
+<article class="process-step">
+<span aria-hidden="true" class="process-icon">
+<svg fill="none" viewbox="0 0 32 32"><path d="m18.8 4 .8 3.1a9.9 9.9 0 0 1 2.2.9l2.7-1.6 2.2 2.2-1.6 2.7c.4.7.7 1.4.9 2.2l3.1.8v3.1l-3.1.8a9.9 9.9 0 0 1-.9 2.2l1.6 2.7-2.2 2.2-2.7-1.6a9.9 9.9 0 0 1-2.2.9l-.8 3.1h-3.1l-.8-3.1a9.9 9.9 0 0 1-2.2-.9L10 25.3l-2.2-2.2 1.6-2.7a9.9 9.9 0 0 1-.9-2.2l-3.1-.8v-3.1l3.1-.8c.2-.8.5-1.5.9-2.2L7.8 8.6 10 6.4 12.7 8a9.9 9.9 0 0 1 2.2-.9l.8-3.1h3.1Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"></path><circle cx="17.25" cy="15.85" r="4" stroke="currentColor" stroke-width="1.7"></circle></svg>
+</span>
+<div class="process-heading"><span class="process-number">03</span><span class="process-title">PREPARE</span><span aria-hidden="true" class="process-separator"></span><span class="process-zh-inline">準備執行</span></div>
+<p>協調車輛、製作、物資及推廣人員，確認活動流程與現場安排。</p>
+</article>
+<article class="process-step">
+<span aria-hidden="true" class="process-icon">
+<svg fill="none" viewbox="0 0 32 32"><path d="M5 14v4h5l10 5V9l-10 5H5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="m10 18 1.5 7h4L14 20" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M24 11.5 28 9M24.5 16H30M24 20.5l4 2.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg>
+</span>
+<div class="process-heading"><span class="process-number">04</span><span class="process-title">LAUNCH</span><span aria-hidden="true" class="process-separator"></span><span class="process-zh-inline">現場推廣</span></div>
+<p>按計劃展開流動廣告、品牌展示或互動活動，提供現場執行支援。</p>
+</article>
+</div>
+<picture class="process-photo"><img alt="MEGURI 推廣員在街頭品牌活動現場向顧客遞上宣傳物資" decoding="async" height="1402" loading="lazy" src="images/HOME_FROM_BRIEF_TO_STREET_PROMOTER.webp" width="1122"/></picture>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section shell" id="faq">
+<div class="section-head"><h2 id="faq-heading">F<span>A</span>Q</h2><p>查詢流動廣告車及品牌活動前　<br class="mobile-break"/>先了解常見問題與所需資料</p></div>
+
+
+
+
+
+
+
+
+<div class="p3-faq-grid"><article class="p3-faq-card"><h3><span class="p3-faq-index">Q01</span> MEGURI 有哪些流動廣告車及推廣形式？</h3><p>目前網站展示八款車型，包括流動廣告車、迷你宣傳車、展示廣告車、小型流動廣告車、Volkswagen T2 復古廣告車、雪糕車、電車巡遊及水晶巴士。可按品牌展示、街頭推廣或互動體驗等需要選擇。</p></article><article class="p3-faq-card"><h3><span class="p3-faq-index">Q02</span> 未決定選擇哪款車，可以先查詢嗎？</h3><p>可以。你可以先分享推廣目標、受眾、地區與預算，我們會協助評估合適的車型及活動形式。表格的「意向車款」亦可選擇「尚未決定」。</p></article><article class="p3-faq-card"><h3><span class="p3-faq-index">Q03</span> 租用流動廣告車需要提前多久安排？</h3><p>實際準備時間視乎車型檔期、車身設計製作、活動安排及所需審批而定。建議確定初步日期後及早查詢，以便評估可行時間表。</p></article><article class="p3-faq-card"><h3><span class="p3-faq-index">Q04</span> MEGURI 可以提供哪些活動策劃及執行支援？</h3><p>可按項目需要協調車輛、設計製作、推廣人員、活動流程及現場執行安排；具體服務範圍會按項目另行確認。</p></article><article class="p3-faq-card p3-faq-card-last"><h3><span class="p3-faq-index">Q05</span> 查詢報價時需要提供哪些資料？</h3><p>建議提供聯絡資料、活動目標、預計日期、地區、日數及預算。如未有完整資料，亦可以先透過表格或 WhatsApp 分享初步構思。</p></article></div><div class="p3-faq-cta"><span aria-label="查看更多常見問題（頁面尚未啟用）" class="p3-faq-more">查看更多常見問題 →</span></div></section>
+<section class="enquiry" id="enquiry">
+<div class="enquiry-inner shell">
+<div class="enquiry-copy"><h2>ABOUT<br/><span>YOUR CAMPAIGN</span></h2><p>分享你的推廣目標，讓我們為你策劃合適方案。</p></div>
+<div class="form-card">
+<!-- Formspree endpoint configured; change this action URL if you create a different form. -->
+<form action="https://formspree.io/f/mwlpjdjw" id="enquiry-form" method="POST">
+<input name="_subject" type="hidden" value="MEGURI 網站新查詢"/>
+<div class="fields">
+<div><label for="name">姓名 <span class="required">*</span></label><input autocomplete="name" id="name" name="name" placeholder="請輸入姓名" required=""/></div>
+<div><label for="company">公司名稱 <span class="required">*</span></label><input autocomplete="organization" id="company" name="company" placeholder="請輸入公司名稱" required=""/></div>
+<div class="full"><label for="contact">電郵／WhatsApp／電話 <span class="required">*</span></label><input id="contact" name="contact" placeholder="請提供聯絡方式" required=""/></div>
+<div><label for="format">意向車款</label><select id="format" name="preferred_format"><option value="">尚未決定</option><option value="流動廣告車">流動廣告車</option><option value="迷你宣傳車">迷你宣傳車</option><option value="展示廣告車">展示廣告車</option><option value="小型流動廣告車">小型流動廣告車</option><option value="Volkswagen T2 復古廣告車">Volkswagen T2 復古廣告車</option><option value="雪糕車">雪糕車</option><option value="電車巡遊">電車巡遊</option><option value="水晶巴士">水晶巴士</option></select></div>
+<div><label for="date">預計活動日期</label><input id="date" name="preferred_date" type="date"/></div>
+<div><label for="location">活動地區</label><input id="location" name="location" placeholder="例如：尖沙咀、銅鑼灣"/></div>
+<div class="full"><label for="notes">活動需求</label><textarea id="notes" name="campaign_needs" placeholder="歡迎簡述活動目標、形式或其他需要"></textarea></div>
+</div>
+<button class="pill submit" type="submit">馬上查詢 →</button>
+<p aria-live="polite" class="form-status" id="form-status" role="status"></p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="footer-inner shell">
+<div class="footer-brand"><a aria-label="MEGURI 首頁" class="logo" href="#top"><img alt="MEGURI" height="1600" loading="lazy" src="images/meguri-logo.jpeg" width="1600"/></a><p>Visibility · Activation · Experience</p></div>
+<div class="footer-contacts">
+<a aria-label="Instagram @meguri.ad" class="footer-contact" href="https://www.instagram.com/meguri.ad/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="footer-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg></span>
+<span><strong>Instagram</strong><small>@meguri.ad</small></span>
+</a>
+<a aria-label="WhatsApp 聯絡 MEGURI：+852 8482 6854" class="footer-contact" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%20MEGURI%EF%BC%81%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%E6%9C%8D%E5%8B%99%E3%80%82" onclick="return gtag_report_conversion(this.href);" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="footer-icon"><svg fill="none" viewbox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2.2"></path><path d="M11.2 10.5c-.5 0-1.2.7-1.2 1.9 0 3.3 4.2 7.6 7.7 8.7 1.2.4 2.7.5 3.7-.2.6-.4 1-1.2.9-1.6-.1-.2-2.1-1.1-2.4-1.1-.3 0-.5.4-1 .9-.3.3-.6.4-1 .2-1.3-.6-2.5-1.6-3.4-2.8-.3-.4 0-.7.3-1 .3-.3.6-.6.4-1-.2-.5-1.1-2.4-1.4-2.9-.1-.3-.3-.4-.6-.4Z" fill="currentColor"></path></svg></span>
+<span><strong>WhatsApp</strong><small>+852 8482 6854</small></span>
+</a>
+</div>
+<p class="footer-disclaimer">MEGURI is operated by Gamba Communications Limited. </p>
+</div>
+</footer>
+<a aria-label="WhatsApp 聯絡 MEGURI" class="whatsapp-float" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%20MEGURI%EF%BC%81%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%E6%9C%8D%E5%8B%99%E3%80%82" onclick="return gtag_report_conversion(this.href);" rel="noopener noreferrer" target="_blank" title="WhatsApp 聯絡 MEGURI">
+<svg aria-hidden="true" fill="none" viewbox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2.2"></path><path d="M11.2 10.5c-.5 0-1.2.7-1.2 1.9 0 3.3 4.2 7.6 7.7 8.7 1.2.4 2.7.5 3.7-.2.6-.4 1-1.2.9-1.6-.1-.2-2.1-1.1-2.4-1.1-.3 0-.5.4-1 .9-.3.3-.6.4-1 .2-1.3-.6-2.5-1.6-3.4-2.8-.3-.4 0-.7.3-1 .3-.3.6-.6.4-1-.2-.5-1.1-2.4-1.4-2.9-.1-.3-.3-.4-.6-.4Z" fill="currentColor"></path></svg>
+</a>
+<script>
+  const enquiryForm = document.getElementById('enquiry-form');
+  const formStatus = document.getElementById('form-status');
+
+  enquiryForm.addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    const submitButton = enquiryForm.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = '提交中…';
+    formStatus.textContent = '';
+
+    try {
+      const response = await fetch(enquiryForm.action, {
+        method: 'POST',
+        body: new FormData(enquiryForm),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+     if (response.ok) {
+  try { sessionStorage.setItem('meguri_enquiry_submitted', '1'); } catch (storageError) { /* Submission already succeeded. */ }
+  window.location.href = new URL('thank-you.html', window.location.href).href;
+} else {
+        formStatus.textContent = '提交未成功，請稍後再試或透過 WhatsApp 聯絡我們。';
+        submitButton.disabled = false;
+        submitButton.textContent = '馬上查詢 →';
+      }
+    } catch (error) {
+      formStatus.textContent = '提交未成功，請稍後再試或透過 WhatsApp 聯絡我們。';
+      submitButton.disabled = false;
+      submitButton.textContent = '馬上查詢 →';
+    }
+  });
+</script>
+<!-- Event snippet for Whatsapp Enquiry Click conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18497496047/YIrvCLbtsJMdEO_HpfRE'
+    });
+  }
+
+  return true;
+}
+</script>
+<script>
+(function () {
+  const slider = document.getElementById('format-slider');
+  const cards = Array.from(slider.querySelectorAll('.format-card'));
+  const arrows = document.querySelectorAll('.format-arrow');
+  const counter = document.getElementById('format-counter');
+  const reduced = window.matchMedia('(prefers-reduced-motion:reduce)');
+  function updateControls() {
+    const max = slider.scrollWidth - slider.clientWidth;
+    arrows[0].disabled = slider.scrollLeft <= 2;
+    arrows[1].disabled = slider.scrollLeft >= max - 2;
+    const step = cards[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(slider).gap) || 0);
+    const position = Math.min(cards.length, Math.round(slider.scrollLeft / step) + 1);
+    counter.textContent = String(position).padStart(2,'0') + ' / ' + String(cards.length).padStart(2,'0');
+  }
+  function advance(direction) {
+    const step = cards[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(slider).gap) || 0);
+    slider.scrollBy({left:direction * step,behavior:reduced.matches ? 'auto' : 'smooth'});
+  }
+  arrows.forEach(button => button.addEventListener('click', () => advance(Number(button.dataset.step))));
+  slider.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault(); advance(event.key === 'ArrowRight' ? 1 : -1);
+    }
+  });
+  slider.addEventListener('scroll', updateControls, {passive:true});
+  new ResizeObserver(updateControls).observe(slider);
+  updateControls();
+})();
+</script>
+<script>
+(function(){
+ const stage=document.getElementById('panorama-stage');
+ if(!stage) return;
+ const slides=Array.from(stage.querySelectorAll('.panorama-frame'));
+ const dots=Array.from(stage.querySelectorAll('.panorama-dot'));
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ let index=0, timer;
+ function show(n){index=(n+slides.length)%slides.length;slides.forEach((slide,i)=>{const active=i===index;slide.classList.toggle('is-active',active);slide.setAttribute('aria-hidden',String(!active));});dots.forEach((dot,i)=>{dot.classList.toggle('is-active',i===index);if(i===index)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');});}
+ function stop(){if(timer){clearInterval(timer);timer=null;}}
+ function start(){stop();if(!reduced.matches && !document.hidden)timer=setInterval(()=>show(index+1),6500);}
+ dots.forEach((dot,i)=>dot.addEventListener('click',()=>{show(i);start();}));
+ let touchX=null;stage.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX;},{passive:true});stage.addEventListener('touchend',e=>{if(touchX===null)return;const delta=e.changedTouches[0].clientX-touchX;if(Math.abs(delta)>48){show(index+(delta<0?1:-1));start();}touchX=null;},{passive:true});
+ stage.addEventListener('mouseenter',stop);stage.addEventListener('mouseleave',start);stage.addEventListener('focusin',stop);stage.addEventListener('focusout',start);
+ document.addEventListener('visibilitychange',start);reduced.addEventListener('change',start);
+ show(0);start();
+})();
+</script></body>
+</html>
