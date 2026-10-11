@@ -17,7 +17,7 @@
 <meta content="#ff008c" name="theme-color"/>
 <meta content="MEGURI 提供香港流動廣告車及品牌活動推廣服務，涵蓋流動廣告車、迷你宣傳車、展示廣告車等八款車型，配合街頭宣傳、品牌體驗及推廣活動。歡迎查詢。" name="description"/>
 <title>香港流動廣告車及品牌活動推廣｜MEGURI</title>
-<link rel="canonical" href="https://megurihk.com/"/>
+<link href="https://megurihk.com/" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="zh_HK" property="og:locale"/>
 <meta content="MEGURI" property="og:site_name"/>
@@ -567,7 +567,7 @@
 #formats .p3-best-label{width:100%;border-top:1px solid #eee7eb;padding-top:13px;font:800 .69rem/1.45 Arial,sans-serif;letter-spacing:.12em;color:#817b80;margin-top:auto;}
 #formats .p3-vehicle-best{font-size:.85rem;line-height:1.7;color:#5d5960;margin:6px 0 0;}
 #formats .p3-vehicle-more{display:inline-block;margin-top:15px;color:#f90089;font-weight:800;text-underline-offset:5px;}
-#formats .p3-preview-note{color:#777;font-size:.72rem;line-height:1.6;margin:8px 2px 0;}
+
 @media(max-width:640px){#formats .p3-vehicle-copy{padding:19px 19px 23px}#formats .p3-vehicle-frame{aspect-ratio:4/3}#formats .p3-vehicle-frame img{aspect-ratio:4/3}#formats .p3-vehicle-name{font-size:1.48rem}}
 </style><style>/* MEGURI Phase 3 approved scope-only refinements */
 #formats .p3-vehicle-frame{aspect-ratio:4/3;}
@@ -626,11 +626,52 @@
 @media(max-width:900px){.activation-process .process-heading{grid-template-columns:2.5rem 6.2rem 2px minmax(0,1fr);column-gap:6px}}
 @media(max-width:640px){#faq .p3-faq-grid{grid-template-columns:1fr;gap:12px}#faq .p3-faq-card{padding:19px 18px;border-radius:16px}#faq .p3-faq-card-last{grid-column:auto}#formats .p3-vehicle-desc{min-height:0}#formats .p3-best-row{gap:7px}}
 @media(max-width:390px){.activation-process .process-heading{grid-template-columns:2.15rem 5.95rem 2px minmax(0,1fr);column-gap:5px}}
+</style><style>
+/* MEGURI approved footer extension: consistent site navigation */
+.meguri-footer-sitemap{border-top:1px solid rgba(92,92,92,.16);padding:29px 0 25px;margin-top:20px;}
+.meguri-footer-sitemap-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.55fr);gap:32px;}
+.meguri-footer-sitemap h2{font:800 13px/1.4 Arial,sans-serif;letter-spacing:.07em;color:inherit;margin:0 0 14px;}
+.meguri-footer-sitemap-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 18px;}
+.meguri-footer-sitemap-links a{color:inherit;opacity:.78;text-decoration:none;font-size:13px;line-height:1.55;}
+.meguri-footer-sitemap-links a:hover,.meguri-footer-sitemap-links a:focus-visible{color:#f90089;opacity:1;text-decoration:underline;text-underline-offset:4px;}
+@media(max-width:640px){.meguri-footer-sitemap{padding:24px 0 18px}.meguri-footer-sitemap-inner{grid-template-columns:1fr;gap:25px}.meguri-footer-sitemap-links{gap:10px 14px}.meguri-footer-sitemap-links a{font-size:13px}}
+</style><style>/* Phase 4 approved footer information hierarchy: directory then signature */
+footer .meguri-footer-sitemap{border-top:0;margin-top:0;padding-top:30px;padding-bottom:30px;}
+footer .footer-inner{border-top:1px solid rgba(92,92,92,.16);padding-top:26px;}
+@media(max-width:850px){footer .meguri-footer-sitemap{padding-top:26px;padding-bottom:22px}footer .footer-inner{padding-top:22px}}
+</style><style>
+/* MEGURI Phase 4 / Compact footer: layout-only overrides; preserves existing official branding and links */
+footer{padding-top:0;padding-bottom:20px}
+footer .meguri-footer-sitemap{padding:22px 0 20px;margin-top:0}
+footer .meguri-footer-sitemap-inner{column-gap:26px;row-gap:20px}
+footer .meguri-footer-sitemap h2{margin-bottom:9px}
+footer .meguri-footer-sitemap-links{gap:6px 16px}
+footer .meguri-footer-sitemap-links a{line-height:1.48}
+footer .footer-inner{padding-top:18px;gap:18px}
+footer .footer-contacts{gap:12px;padding-top:4px;padding-bottom:4px}
+footer .footer-contact{gap:8px}
+footer .footer-brand p{margin-top:4px}
+@media(max-width:900px){
+ footer .meguri-footer-sitemap{padding-top:21px;padding-bottom:17px}
+ footer .footer-inner{padding-top:18px;gap:12px}
+ footer .footer-contacts{padding:12px 0 0;gap:12px 18px}
+ footer .footer-disclaimer{padding:11px 0 0}
+}
+@media(max-width:640px){
+ footer{padding-top:0;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+ footer .meguri-footer-sitemap{padding-top:20px;padding-bottom:16px}
+ footer .meguri-footer-sitemap-inner{grid-template-columns:1fr;gap:17px}
+ footer .meguri-footer-sitemap h2{margin-bottom:8px}
+ footer .meguri-footer-sitemap-links{gap:7px 12px}
+ footer .footer-inner{padding-top:16px;gap:11px}
+ footer .footer-contacts{padding-top:11px}
+ footer .footer-disclaimer{padding-top:10px}
+}
 </style></head>
 <body>
 <header class="topbar">
 <nav aria-label="主選單" class="nav shell">
-<a aria-label="MEGURI 首頁" class="logo" href="#top"><img alt="MEGURI" height="1600" src="images/meguri-logo.jpeg" width="1600"/></a>
+<a aria-label="MEGURI 首頁" class="logo" href="#top"><img alt="MEGURI" height="1600" src="/images/meguri-logo.jpeg" width="1600"/></a>
 <div class="nav-links"><a href="#about">服務特色</a><a href="#formats">廣告車款</a><a href="#global-inspiration">靈感案例</a><a href="#process">啟動流程</a><a href="#enquiry">聯絡我們</a></div>
 <a class="pill nav-cta" href="#enquiry">馬上查詢 →</a>
 </nav>
@@ -659,11 +700,11 @@
 <button aria-controls="format-slider" aria-label="下一款車型" class="format-arrow" data-step="1" type="button"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
 </div>
 </div>
-<div aria-label="八款車型，左右滑動瀏覽" class="format-grid" id="format-slider" role="region" tabindex="0"><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Moving Showroom 流動廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_MOVING_SHOWROOM.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">BRAND EXPERIENCE</div><h3 class="p3-vehicle-name">Moving Showroom</h3><p class="p3-vehicle-zh">流動廣告車</p><p class="p3-vehicle-desc">將產品展示與客戶交流帶到指定地點，打造近距離品牌體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">新品發佈 · 產品展示 · 客戶體驗</p><a class="p3-vehicle-more" href="/moving-showroom/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Mini Promo Van 迷你宣傳車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_MINI_PROMO_VAN.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">STREET ACTIVATION</div><h3 class="p3-vehicle-name">Mini Promo Van</h3><p class="p3-vehicle-zh">迷你宣傳車</p><p class="p3-vehicle-desc">小巧車身，靈活配合街頭互動及地區品牌宣傳。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">街頭派發 · 社區推廣 · 偶像應援</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Display Truck 展示廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_DISPLAY_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">BRAND DISPLAY</div><h3 class="p3-vehicle-name">Display Truck</h3><p class="p3-vehicle-zh">展示廣告車</p><p class="p3-vehicle-desc">將品牌裝置與推廣內容帶到街頭，建立鮮明視覺焦點。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">產品展示 · 品牌曝光 · 巡迴推廣</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Small Truck 小型流動廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_SMALL_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">LOCAL VISIBILITY</div><h3 class="p3-vehicle-name">Small Truck</h3><p class="p3-vehicle-zh">小型流動廣告車</p><p class="p3-vehicle-desc">利用流動車身廣告，將品牌訊息帶到不同地區。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">地區宣傳 · 車身廣告 · 品牌曝光</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Volkswagen T2 復古廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_VOLKSWAGEN_T2.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">RETRO ACTIVATION</div><h3 class="p3-vehicle-name">Volkswagen T2</h3><p class="p3-vehicle-zh">復古廣告車</p><p class="p3-vehicle-desc">以復古車型營造有個性嘅品牌活動及打卡體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">主題活動 · 打卡互動 · 品牌推廣</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Ice-Cream Truck 雪糕車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_ICE_CREAM_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">SAMPLING EXPERIENCE</div><h3 class="p3-vehicle-name">Ice-Cream Truck</h3><p class="p3-vehicle-zh">雪糕車</p><p class="p3-vehicle-desc">結合試食、派發及街頭互動，讓消費者親身接觸品牌。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">產品試食 · 街頭派發 · 消費者互動</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Tram Parade 電車巡遊 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_TRAM_PARADE.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">CITY VISIBILITY</div><h3 class="p3-vehicle-name">Tram Parade</h3><p class="p3-vehicle-zh">電車巡遊</p><p class="p3-vehicle-desc">以城市巡遊形式呈現品牌主題，建立沿途曝光。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">城市巡遊 · 節慶活動 · 品牌宣傳</p></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Crystal Bus 水晶巴士 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_CRYSTAL_BUS.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">MOBILE EXPERIENCE</div><h3 class="p3-vehicle-name">Crystal Bus</h3><p class="p3-vehicle-zh">水晶巴士</p><p class="p3-vehicle-desc">利用特色車廂空間，打造具參與感嘅品牌體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">品牌體驗 · 主題活動 · 特別企劃</p></div></div></article></div><p class="p3-preview-note">預覽說明：Moving Showroom 與 Mini Promo Van 使用已批准的乾淨車圖；其他六款暫沿用網站現有圖片，待逐款完成 Vehicle-only 裁切後替換。</p>
+<div aria-label="八款車型，左右滑動瀏覽" class="format-grid" id="format-slider" role="region" tabindex="0"><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Moving Showroom 流動廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_MOVING_SHOWROOM.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">BRAND EXPERIENCE</div><h3 class="p3-vehicle-name">Moving Showroom</h3><p class="p3-vehicle-zh">流動廣告車</p><p class="p3-vehicle-desc">將產品展示與客戶交流帶到指定地點，打造近距離品牌體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">新品發佈 · 產品展示 · 客戶體驗</p><a class="p3-vehicle-more" href="/moving-showroom/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Mini Promo Van 迷你宣傳車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_MINI_PROMO_VAN.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">STREET ACTIVATION</div><h3 class="p3-vehicle-name">Mini Promo Van</h3><p class="p3-vehicle-zh">迷你宣傳車</p><p class="p3-vehicle-desc">小巧車身，靈活配合街頭互動及地區品牌宣傳。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">街頭派發 · 社區推廣 · 偶像應援</p><a class="p3-vehicle-more" href="/mini-promo-van/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Display Truck 展示廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_DISPLAY_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">BRAND DISPLAY</div><h3 class="p3-vehicle-name">Display Truck</h3><p class="p3-vehicle-zh">展示廣告車</p><p class="p3-vehicle-desc">將品牌裝置與推廣內容帶到街頭，建立鮮明視覺焦點。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">產品展示 · 品牌曝光 · 巡迴推廣</p><a class="p3-vehicle-more" href="/display-truck/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Small Truck 小型流動廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_SMALL_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">LOCAL VISIBILITY</div><h3 class="p3-vehicle-name">Small Truck</h3><p class="p3-vehicle-zh">小型流動廣告車</p><p class="p3-vehicle-desc">利用流動車身廣告，將品牌訊息帶到不同地區。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">地區宣傳 · 車身廣告 · 品牌曝光</p><a class="p3-vehicle-more" href="/small-truck/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Volkswagen T2 復古廣告車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_VOLKSWAGEN_T2.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">RETRO ACTIVATION</div><h3 class="p3-vehicle-name">Volkswagen T2</h3><p class="p3-vehicle-zh">復古廣告車</p><p class="p3-vehicle-desc">以復古車型營造有個性嘅品牌活動及打卡體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">主題活動 · 打卡互動 · 品牌推廣</p><a class="p3-vehicle-more" href="/volkswagen-t2/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Ice-Cream Truck 雪糕車 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_ICE_CREAM_TRUCK.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">SAMPLING EXPERIENCE</div><h3 class="p3-vehicle-name">Ice-Cream Truck</h3><p class="p3-vehicle-zh">雪糕車</p><p class="p3-vehicle-desc">結合試食、派發及街頭互動，讓消費者親身接觸品牌。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">產品試食 · 街頭派發 · 消費者互動</p><a class="p3-vehicle-more" href="/ice-cream-truck/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Tram Parade 電車巡遊 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_TRAM_PARADE.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">CITY VISIBILITY</div><h3 class="p3-vehicle-name">Tram Parade</h3><p class="p3-vehicle-zh">電車巡遊</p><p class="p3-vehicle-desc">以城市巡遊形式呈現品牌主題，建立沿途曝光。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">城市巡遊 · 節慶活動 · 品牌宣傳</p><a class="p3-vehicle-more" href="/tram-parade/">了解更多 →</a></div></div></article><article class="format-card p3-vehicle-card"><div class="p3-vehicle-frame"><img alt="MEGURI Crystal Bus 水晶巴士 車型展示" decoding="async" height="900" loading="lazy" src="images/HOME_OUR_VEHICLES_CRYSTAL_BUS.webp" width="1200"/></div><div class="p3-vehicle-copy"><div class="p3-eyebrow">MOBILE EXPERIENCE</div><h3 class="p3-vehicle-name">Crystal Bus</h3><p class="p3-vehicle-zh">水晶巴士</p><p class="p3-vehicle-desc">利用特色車廂空間，打造具參與感嘅品牌體驗。</p><div class="p3-best-label">BEST FOR</div><div class="p3-best-row"><p class="p3-vehicle-best">品牌體驗 · 主題活動 · 特別企劃</p><a class="p3-vehicle-more" href="/crystal-bus/">了解更多 →</a></div></div></article></div>
 </section></div><section aria-labelledby="p2-gi-title" class="section shell p2-gi" id="global-inspiration">
 <div class="section-head"><h2 id="p2-gi-title">GLOBAL <span>INSPIRATION</span></h2><p>海外品牌案例與創意參考</p></div>
 <div class="p2-gi-grid">
-<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_MOBILE.png"/><img alt="AI 概念圖：流動展示車作為產品體驗及商務交流空間" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">01 / MOVING SHOWROOM</span><h3>BANNER ENGINEERING</h3><span class="p2-gi-type">US · VISIBILITY / EXPERIENCE</span></div><div class="p2-gi-body"><p>以流動宣傳車結合產品展示與客戶交流，將產品體驗帶到不同地區。</p></div></article>
+<article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_MOBILE.png"/><img alt="AI 概念圖：流動展示車作為產品體驗及商務交流空間" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_MOVING_SHOWROOM_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">01 / MOVING SHOWROOM</span><h3>BANNER ENGINEERING</h3><span class="p2-gi-type">US · VISIBILITY / EXPERIENCE</span></div><div class="p2-gi-body"><p>以流動展廳結合產品展示與客戶交流，將產品體驗帶到不同地區。</p></div></article>
 <article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_SAMPLING_ACTIVATION_MOBILE.png"/><img alt="AI 概念圖：流動雪糕車進行試食與街頭互動" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_SAMPLING_ACTIVATION_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">02 / SAMPLING / ACTIVATION</span><h3>LITTLE MOONS</h3><span class="p2-gi-type">UK · ACTIVATION / EXPERIENCE</span></div><div class="p2-gi-body"><p>以流動雪糕車配合產品試食及街頭互動，讓受眾透過實際體驗認識品牌。</p></div></article>
 <article class="p2-gi-card"><figure class="p2-gi-photo"><picture><source media="(max-width: 640px)" srcset="images/HOME_GLOBAL_INSPIRATION_CREATIVE_VEHICLE_MOBILE.png"/><img alt="AI 概念圖：移動式品牌展示車結合體驗及現場活動" decoding="async" loading="lazy" src="images/HOME_GLOBAL_INSPIRATION_CREATIVE_VEHICLE_DESKTOP.png"/></picture></figure><div class="p2-gi-head"><span class="p2-gi-number">03 / CREATIVE VEHICLE</span><h3>ADIDAS FÚTBOL SOCIETY</h3><span class="p2-gi-type">US · VISIBILITY / ACTIVATION / EXPERIENCE</span></div><div class="p2-gi-body"><p>以特製展示車結合產品陳列與現場活動，讓車輛成為品牌故事的一部分。</p></div></article>
 </div><div class="p2-gi-actions"><a class="p2-text-link" href="/global-inspiration.html">探索更多全球品牌案例 →</a><p class="p2-gi-disclaimer">圖片為 AI 創意示意</p></div>
@@ -707,14 +748,6 @@
 </section>
 <section aria-labelledby="faq-heading" class="section shell" id="faq">
 <div class="section-head"><h2 id="faq-heading">F<span>A</span>Q</h2><p>查詢流動廣告車及品牌活動前　<br class="mobile-break"/>先了解常見問題與所需資料</p></div>
-
-
-
-
-
-
-
-
 <div class="p3-faq-grid"><article class="p3-faq-card"><h3><span class="p3-faq-index">Q01</span> MEGURI 有哪些流動廣告車及推廣形式？</h3><p>目前網站展示八款車型，包括流動廣告車、迷你宣傳車、展示廣告車、小型流動廣告車、Volkswagen T2 復古廣告車、雪糕車、電車巡遊及水晶巴士。可按品牌展示、街頭推廣或互動體驗等需要選擇。</p></article><article class="p3-faq-card"><h3><span class="p3-faq-index">Q02</span> 未決定選擇哪款車，可以先查詢嗎？</h3><p>可以。你可以先分享推廣目標、受眾、地區與預算，我們會協助評估合適的車型及活動形式。表格的「意向車款」亦可選擇「尚未決定」。</p></article><article class="p3-faq-card"><h3><span class="p3-faq-index">Q03</span> 租用流動廣告車需要提前多久安排？</h3><p>實際準備時間視乎車型檔期、車身設計製作、活動安排及所需審批而定。建議確定初步日期後及早查詢，以便評估可行時間表。</p></article><article class="p3-faq-card"><h3><span class="p3-faq-index">Q04</span> MEGURI 可以提供哪些活動策劃及執行支援？</h3><p>可按項目需要協調車輛、設計製作、推廣人員、活動流程及現場執行安排；具體服務範圍會按項目另行確認。</p></article><article class="p3-faq-card p3-faq-card-last"><h3><span class="p3-faq-index">Q05</span> 查詢報價時需要提供哪些資料？</h3><p>建議提供聯絡資料、活動目標、預計日期、地區、日數及預算。如未有完整資料，亦可以先透過表格或 WhatsApp 分享初步構思。</p></article></div><div class="p3-faq-cta"><span aria-label="查看更多常見問題（頁面尚未啟用）" class="p3-faq-more">查看更多常見問題 →</span></div></section>
 <section class="enquiry" id="enquiry">
 <div class="enquiry-inner shell">
@@ -740,8 +773,8 @@
 </section>
 </main>
 <footer>
-<div class="footer-inner shell">
-<div class="footer-brand"><a aria-label="MEGURI 首頁" class="logo" href="#top"><img alt="MEGURI" height="1600" loading="lazy" src="images/meguri-logo.jpeg" width="1600"/></a><p>Visibility · Activation · Experience</p></div>
+<div aria-label="網站導覽與車型介紹" class="meguri-footer-sitemap shell"><div class="meguri-footer-sitemap-inner"><nav aria-label="網站導覽"><h2>網站導覽</h2><div class="meguri-footer-sitemap-links"><a href="/">首頁</a><a href="/#about">服務特色</a><a href="/#formats">廣告車款</a><a href="/#global-inspiration">靈感案例</a><a href="/#process">啟動流程</a><a href="/faq.html">常見問題</a><a href="/#enquiry">聯絡我們</a></div></nav><nav aria-label="車型介紹"><h2>車型介紹</h2><div class="meguri-footer-sitemap-links"><a href="/moving-showroom/">流動廣告車</a><a href="/display-truck/">展示廣告車</a><a href="/small-truck/">小型流動廣告車</a><a href="/mini-promo-van/">迷你宣傳車</a><a href="/volkswagen-t2/">Volkswagen T2 復古廣告車</a><a href="/ice-cream-truck/">雪糕車</a><a href="/tram-parade/">電車巡遊</a><a href="/crystal-bus/">水晶巴士</a></div></nav></div></div><div class="footer-inner shell">
+<div class="footer-brand"><a aria-label="MEGURI 首頁" class="logo" href="#top"><img alt="MEGURI" height="1600" loading="lazy" src="/images/meguri-logo.jpeg" width="1600"/></a><p>Visibility · Activation · Experience</p></div>
 <div class="footer-contacts">
 <a aria-label="Instagram @meguri.ad" class="footer-contact" href="https://www.instagram.com/meguri.ad/" rel="noopener noreferrer" target="_blank">
 <span aria-hidden="true" class="footer-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg></span>
