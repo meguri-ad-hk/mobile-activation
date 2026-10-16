@@ -115,16 +115,44 @@ footer .footer-brand p{margin-top:4px}
  footer .footer-contacts{padding-top:11px}
  footer .footer-disclaimer{padding-top:10px}
 }
+</style><style>
+/* Service-page approved wordmark fix — preserve the Phase 4 master layout. */
+header.topbar .logo, footer .footer-brand .logo {
+  display:flex; align-items:center; flex:none; position:static;
+  width:188px; height:auto; min-height:0; overflow:visible;
+  text-decoration:none;
+}
+header.topbar .logo img, footer .footer-brand .logo img {
+  display:block; position:static; transform:none;
+  width:100%; max-width:100%; height:auto; max-height:none;
+  object-fit:contain; object-position:left center;
+}
+footer .footer-brand { display:flex; flex-direction:column; align-items:flex-start; justify-self:start; text-align:left; min-width:0; }
+footer .footer-brand p { margin:6px 0 0; padding:0; align-self:flex-start; text-align:left; white-space:nowrap; color:var(--muted); font-size:.75rem; font-weight:400; line-height:1.4; }
+footer .footer-inner { grid-template-columns:260px minmax(0,1fr) 245px; }
+@media(max-width:900px) { footer .footer-inner { grid-template-columns:1fr; } }
+@media(max-width:640px) { header.topbar .logo { width:144px; } footer .footer-brand .logo { width:160px; } footer .footer-brand p { font-size:.75rem; } }
+
+/* Phase 4 approved floating WhatsApp: fixed contact entry on long service pages. */
+.meguri-whatsapp-float{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom));z-index:100;display:grid;place-items:center;width:62px;height:62px;border:3px solid #fff;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 7px 23px rgba(0,0,0,.25);transition:transform .2s;text-decoration:none}
+.meguri-whatsapp-float:hover{transform:translateY(-4px)}
+.meguri-whatsapp-float svg{display:block;width:35px;height:35px}
+@media(max-width:640px){.meguri-whatsapp-float{right:15px;bottom:calc(15px + env(safe-area-inset-bottom));width:57px;height:57px}}
+@media(prefers-reduced-motion:reduce){.meguri-whatsapp-float{transition:none}}
+
+/* Match homepage values text family explicitly without changing other service typography. */
+footer .footer-brand p{font-family:Arial,sans-serif;letter-spacing:normal;font-size:.75rem;font-weight:400;line-height:1.4;}
+
 </style></head><body><header class="topbar">
 <nav aria-label="主選單" class="nav shell">
-<a aria-label="MEGURI 首頁" class="logo" href="/#top"><img alt="MEGURI" height="1600" src="/images/meguri-logo.jpeg" width="1600"/></a>
+<a aria-label="MEGURI 首頁" class="logo" href="/#top"><img alt="MEGURI" height="146" src="/images/meguri-header-logo-tight.png" width="865"/></a>
 <div class="nav-links"><a href="/#about">服務特色</a><a href="/#formats">廣告車款</a><a href="/#global-inspiration">靈感案例</a><a href="/#process">啟動流程</a><a href="/#enquiry">聯絡我們</a></div>
 <a class="pill nav-cta" href="/#enquiry">馬上查詢 →</a>
 </nav>
 </header><main>
 <section aria-labelledby="ms-main-heading" class="hero shell">
 <div class="eyebrow">VEHICLE ADVERTISING · HONG KONG</div>
-<h1 class="section-heading" id="ms-main-heading">SMALL TRUCK</h1>
+<h1 class="section-heading" id="ms-main-heading">SMALL <span>TRUCK</span></h1>
 <p class="intro">小型流動廣告車｜以較小型的廣告車身承載品牌訊息，適合靈活的街頭曝光與地區推廣。</p>
 </section>
 <section aria-label="SMALL TRUCK 小型流動廣告車介紹" class="shell product-layout ms-hero-product">
@@ -134,7 +162,7 @@ footer .footer-brand p{margin-top:4px}
 <h2 class="ms-main-title">小型流動廣告車是甚麼？</h2>
 <p class="ms-lead">小型流動廣告車適合希望運用車身廣告在不同地區展示品牌視覺的推廣項目。相比大型展示車，較小車身在活動部署上可能更具彈性，但實際行駛、停泊及活動方式仍須按車輛規格、路線與場地條件確認。</p>
 <p class="ms-hero-secondary">選擇小型流動廣告車時，應按推廣目標、活動地點、車型配置及製作需求評估可行方案。</p>
-<a class="ms-text-cta" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20MEGURI%20%E5%B0%8F%E5%9E%8B%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%EF%BC%88Small%20Truck%EF%BC%89%E7%9A%84%E6%B4%BB%E5%8B%95%E5%AE%89%E6%8E%92%E3%80%82">即時 WhatsApp 查詢 <span aria-hidden="true">→</span></a>
+<a class="ms-text-cta" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20MEGURI%20%E5%B0%8F%E5%9E%8B%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%EF%BC%88Small%20Truck%EF%BC%89%E7%9A%84%E6%B4%BB%E5%8B%95%E5%AE%89%E6%8E%92%E3%80%82" onclick="meguriTrackWhatsAppClick();">即時 WhatsApp 查詢 <span aria-hidden="true">→</span></a>
 </div>
 </section>
 <section class="ms-section ms-section-soft" id="applications"><div class="shell">
@@ -185,21 +213,32 @@ footer .footer-brand p{margin-top:4px}
 <section class="ms-section shell ms-closer"><div>
 <h2>探索合適的小型流動廣告車方案</h2>
 <p>可按活動構思先比較車型特點及相關規劃條件；需要進一步了解時可與 MEGURI 聯絡。</p>
-<div class="ms-footer-links"><a class="pill" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20MEGURI%20%E5%B0%8F%E5%9E%8B%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%EF%BC%88Small%20Truck%EF%BC%89%E3%80%82">WhatsApp 查詢 →</a><a class="ms-text-cta" href="/#formats">查看其他廣告車款 →</a></div>
+<div class="ms-footer-links"><a class="pill" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%20MEGURI%20%E5%B0%8F%E5%9E%8B%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%EF%BC%88Small%20Truck%EF%BC%89%E3%80%82" onclick="meguriTrackWhatsAppClick();">WhatsApp 查詢 →</a><a class="ms-text-cta" href="/#formats">查看其他廣告車款 →</a></div>
 </div></section>
 </main><footer>
 <div aria-label="網站導覽與車型介紹" class="meguri-footer-sitemap shell"><div class="meguri-footer-sitemap-inner"><nav aria-label="網站導覽"><h2>網站導覽</h2><div class="meguri-footer-sitemap-links"><a href="/">首頁</a><a href="/#about">服務特色</a><a href="/#formats">廣告車款</a><a href="/#global-inspiration">靈感案例</a><a href="/#process">啟動流程</a><a href="/faq.html">常見問題</a><a href="/#enquiry">聯絡我們</a></div></nav><nav aria-label="車型介紹"><h2>車型介紹</h2><div class="meguri-footer-sitemap-links"><a href="/moving-showroom/">流動廣告車</a><a href="/display-truck/">展示廣告車</a><a href="/small-truck/">小型流動廣告車</a><a href="/mini-promo-van/">迷你宣傳車</a><a href="/volkswagen-t2/">Volkswagen T2 復古廣告車</a><a href="/ice-cream-truck/">雪糕車</a><a href="/tram-parade/">電車巡遊</a><a href="/crystal-bus/">水晶巴士</a></div></nav></div></div><div class="footer-inner shell">
-<div class="footer-brand"><a aria-label="MEGURI 首頁" class="logo" href="/#top"><img alt="MEGURI" height="1600" loading="lazy" src="/images/meguri-logo.jpeg" width="1600"/></a><p>Visibility · Activation · Experience</p></div>
+<div class="footer-brand"><a aria-label="MEGURI 首頁" class="logo" href="/#top"><img alt="MEGURI" height="146" loading="lazy" src="/images/meguri-header-logo-tight.png" width="865"/></a><p>Visibility · Activation · Experience</p></div>
 <div class="footer-contacts">
 <a aria-label="Instagram @meguri.ad" class="footer-contact" href="https://www.instagram.com/meguri.ad/" rel="noopener noreferrer" target="_blank">
 <span aria-hidden="true" class="footer-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="18" rx="5" stroke="currentColor" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg></span>
 <span><strong>Instagram</strong><small>@meguri.ad</small></span>
 </a>
-<a aria-label="WhatsApp 聯絡 MEGURI：+852 8482 6854" class="footer-contact" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%20MEGURI%EF%BC%81%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%E6%9C%8D%E5%8B%99%E3%80%82" rel="noopener noreferrer" target="_blank">
+<a aria-label="WhatsApp 聯絡 MEGURI：+852 8482 6854" class="footer-contact" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%20MEGURI%EF%BC%81%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%E6%9C%8D%E5%8B%99%E3%80%82" rel="noopener noreferrer" target="_blank" onclick="meguriTrackWhatsAppClick();">
 <span aria-hidden="true" class="footer-icon"><svg fill="none" viewbox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2.2"></path><path d="M11.2 10.5c-.5 0-1.2.7-1.2 1.9 0 3.3 4.2 7.6 7.7 8.7 1.2.4 2.7.5 3.7-.2.6-.4 1-1.2.9-1.6-.1-.2-2.1-1.1-2.4-1.1-.3 0-.5.4-1 .9-.3.3-.6.4-1 .2-1.3-.6-2.5-1.6-3.4-2.8-.3-.4 0-.7.3-1 .3-.3.6-.6.4-1-.2-.5-1.1-2.4-1.4-2.9-.1-.3-.3-.4-.6-.4Z" fill="currentColor"></path></svg></span>
 <span><strong>WhatsApp</strong><small>+852 8482 6854</small></span>
 </a>
 </div>
 <p class="footer-disclaimer">MEGURI is operated by Gamba Communications Limited. </p>
 </div>
-</footer></body></html>
+</footer><script>
+
+/* Non-blocking WhatsApp click conversion: preserve normal links/new tabs. */
+function meguriTrackWhatsAppClick(){
+  if(typeof gtag==='function'){
+    gtag('event','conversion',{'send_to':'AW-18497496047/YIrvCLbtsJMdEO_HpfRE'});
+  }
+}
+
+</script>
+<a aria-label="WhatsApp 聯絡 MEGURI" class="meguri-whatsapp-float" href="https://wa.me/85284826854?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20MEGURI%20%E5%B0%8F%E5%9E%8B%E6%B5%81%E5%8B%95%E5%BB%A3%E5%91%8A%E8%BB%8A%EF%BC%88Small%20Truck%EF%BC%89%E7%9A%84%E6%B4%BB%E5%8B%95%E5%AE%89%E6%8E%92%E3%80%82" onclick="meguriTrackWhatsAppClick();" rel="noopener noreferrer" target="_blank" title="WhatsApp 聯絡 MEGURI"><svg aria-hidden="true" fill="none" viewbox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2.2"></path><path d="M11.2 10.5c-.5 0-1.2.7-1.2 1.9 0 3.3 4.2 7.6 7.7 8.7 1.2.4 2.7.5 3.7-.2.6-.4 1-1.2.9-1.6-.1-.2-2.1-1.1-2.4-1.1-.3 0-.5.4-1 .9-.3.3-.6.4-1 .2-1.3-.6-2.5-1.6-3.4-2.8-.3-.4 0-.7.3-1 .3-.3.6-.6.4-1-.2-.5-1.1-2.4-1.4-2.9-.1-.3-.3-.4-.6-.4Z" fill="currentColor"></path></svg></a>
+</body></html>
